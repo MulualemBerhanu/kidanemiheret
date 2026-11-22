@@ -1,0 +1,676 @@
+{
+  "metadata": {
+    "home": {
+      "title": "በፖርትላንድ ኦሬገን የደብረ መንክራት ኪዳነ ምሕረት የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተ ክርስትያን",
+      "description": "በኢትዮጵያ ኦርቶዶክስ ተዋህዶ ሃይማኖት የተመሠረተ ቅዱስ ማህበረሰብ — በክርስቶስ አምልኮ፣ fellowship እና አገልግሎት።"
+    },
+    "about": {
+      "title": "ስለ እኛ",
+      "description": "ስለ ደብረ መንክራት ኪዳነ ምሕረት ቤተ ክርስትያን — ታሪክ፣ ሃይማኖት እና ኢትዮጵያ ኦርቶዶክስ ቅርስ ይወቁ።"
+    },
+    "ministries": {
+      "title": "አገልግሎቶች",
+      "description": "በቤተ ክርስቲያናችን ያሉ አገልግሎቶች — አምልኮ፣ ትምህርት፣ ማህበረሰብ አገልግሎት እና fellowship።"
+    },
+    "events": {
+      "title": "በዓላት",
+      "description": "በቤተ ክርስቲያናችን የሚከበሩ ቅዱስ በዓላት እና የማህበረሰብ ፕሮግራሞች።"
+    },
+    "gallery": {
+      "title": "Gallery",
+      "description": "የአምልኮ፣ fellowship እና ቅርስ ጊዜያት በቤተ ክርስቲያናችን።"
+    },
+    "give": {
+      "title": "መስዋዕት",
+      "description": "ደብረ መንክራት ኪዳነ ምሕረት የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተ ክርስትያንን በgenerosity ይደግፉ።"
+    },
+    "contact": {
+      "title": "ያግኙን",
+      "description": "ቤተ ክርስቲያናችንን ይጎብኙ፣ ይደውሉ ወይም መልእክት ይላኩ።"
+    },
+    "register": {
+      "title": "የአባልነት ምዝገባ",
+      "description": "በደብረ መንክራት ኪዳነ ምሕረት የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተ ክርስትያን አባል ለመሆን ያመልክቱ።"
+    }
+  },
+  "site": {
+    "name": "በፖርትላንድ ኦሬገን የደብረ መንክራት ኪዳነ ምሕረት የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተ ክርስትያን",
+    "shortName": "ደብረ መንክራት ኪዳነ ምሕረት",
+    "denomination": "ኢትዮጵያ ኦርቶዶክስ ተዋሕዶ",
+    "tagline": "እምነት። ቅርስ። አምልኮ። ማህበረሰብ።",
+    "subtitle": "በቅርስ የተመሠረተ። በእምነት የሚመራ። በክርስቶስ የሚያድግ። በፍቅር የሚያገልግል።",
+    "footerTagline": "ኢትዮጵያ ኦርቶዶክስ ተዋሕዶ ቤተ ክርስቲያን — አምልኮ፣ ቅርስ እና ማህበረሰብ።"
+  },
+  "nav": {
+    "home": "መነሻ",
+    "about": "ስለ እኛ",
+    "ministries": "አገልግሎቶች",
+    "events": "በዓላት",
+    "gallery": "Gallery",
+    "give": "መስዋዕት",
+    "register": "መዝገብ",
+    "contact": "ያግኙን",
+    "mainAria": "Main navigation",
+    "toggleMenu": "Toggle menu"
+  },
+  "language": {
+    "english": "English",
+    "amharic": "አማርኛ",
+    "switchLabel": "ቋንቋ"
+  },
+  "common": {
+    "give": "መስዋዕት",
+    "scroll": "Scroll",
+    "upcoming": "ቀጣይ",
+    "learnMore": "ተጨማሪ ይወቁ",
+    "details": "Detail →",
+    "viewAllMinistries": "ሁሉንም አገልግሎቶች →",
+    "fullCalendar": "ሙሉ calendar →",
+    "viewFullGallery": "ሙሉ gallery →",
+    "ourStory": "ታሪካችን",
+    "address": "አድራሻ",
+    "all": "ሁሉም"
+  },
+  "buttons": {
+    "visitUs": "ይጎብኙን",
+    "prayerRequest": "የprayer ጥያቄ",
+    "planYourVisit": "Visit plan ያድርጉ",
+    "giveOnline": "Online መስዋዕት",
+    "otherWaysToGive": "ሌሎች መስጠት መንገዶች",
+    "sendMessage": "መልእክት ይላኩ",
+    "submitRegistration": "ምዝገባውን ያስገቡ",
+    "returnHome": "ወደ መነሻ ተመለስ"
+  },
+  "chapters": {
+    "believe": {
+      "number": "01",
+      "title": "Believe",
+      "geEz": "እምነት"
+    },
+    "belong": {
+      "number": "02",
+      "title": "Belong",
+      "geEz": "ማህበረሰብ"
+    },
+    "become": {
+      "number": "03",
+      "title": "Become",
+      "geEz": "አገልግሎት"
+    }
+  },
+  "hero": {
+    "upcomingAria": "ቀጣይ event",
+    "imageAlt": "ቅድስት ድንግል ማርያም እና የመድሃኒታችን ኢየሱስ ክርስቶስ"
+  },
+  "welcome": {
+    "eyebrow": "እንኳን ደህና መጡ",
+    "geEz": "እንኳን ደህና መጡ",
+    "title": "በሕይወት ያለ የእምነት ቅርስ",
+    "description": "ደብረ መንክራት ኪዳነ ምሕረት በጥንታዊ ኢትዮጵያ ኦርቶዶክስ አምልኮ እና በክርስቶስ ላይ የተመሠረተ ገጣቢ ማህበረሰብ መኖሪያ ቤት ነው። የቅዳሴውን ውበት፣ የሕብረት ስሜት እና የአገልግሎት ጥሪ እንጋብዎታለን።",
+    "imageAlt": "በአምልኮ ላይ ያለ ማህበረሰብ",
+    "imageQuote": "ጥንታዊ ቅዳሴ ከሕይወት ያለ የእምነት ማህበረሰብ ጋር የሚገናኝበት ቦታ።",
+    "imageCaption": "ፖርትላንድ፣ ኦሪጌን",
+    "highlightsLabel": "የቤተ ክርስቲያን ማዕከላዊ ነገሮች",
+    "highlights": {
+      "heritage": "ቅዱስ ቅርስ",
+      "worship": "ቅዱስ ቁርባን",
+      "community": "ማህበራዊ ሕብረት"
+    }
+  },
+  "ministries": {
+    "eyebrow": "አገልግሎቶች",
+    "geEz": "አገልግሎት",
+    "title": "一起 serve & grow",
+    "description": "Every member worship፣ learn እና serve in love ቦታ አለው።",
+    "pageTitle": "አገልግሎቶች",
+    "pageSubtitle": "በጊዜ፣ በ talent እና በፍቅር ለጌታ እና ለአንድ ለአንድ ያገልግሉ።",
+    "items": {
+      "sunday-school": {
+        "title": "Sunday School",
+        "description": "Young hearts በScripture፣ Ethiopian Orthodox tradition እና Christ-centered living።"
+      },
+      "choir": {
+        "title": "Choir Ministry",
+        "description": "Sacred melodies እና mezmur worship elevate እና heritage honor።"
+      },
+      "youth": {
+        "title": "Youth Ministry",
+        "description": "Next generation በfellowship፣ service እና faithful discipleship።"
+      },
+      "prayer": {
+        "title": "Prayer Ministry",
+        "description": "Intercession፣ fasting እና spiritual support for church & community።"
+      },
+      "outreach": {
+        "title": "Community Outreach",
+        "description": "Neighbors በlove serve — food፣ care እና Christ's light።"
+      },
+      "women": {
+        "title": "Women's Ministry",
+        "description": "Fellowship፣ mentorship እና service among sisters in faith & love።"
+      },
+      "men": {
+        "title": "Men's Ministry",
+        "description": "Brotherhood፣ accountability እና leadership rooted in Orthodox values።"
+      }
+    }
+  },
+  "events": {
+    "eyebrow": "በዓላት",
+    "geEz": "በዓላት",
+    "title": "Sacred Gatherings",
+    "description": "Feasts፣ fellowship እና community moments throughout year።",
+    "pageTitle": "በዓላት",
+    "pageSubtitle": "Feasts፣ fellowship እና sacred celebrations join ያድርጉ።",
+    "items": {
+      "meskel": {
+        "title": "Meskel Celebration",
+        "description": "Feast of Finding True Cross — processions & liturgy።",
+        "location": "Church Grounds",
+        "startTime": "10:00 AM",
+        "endTime": "2:00 PM"
+      },
+      "timket": {
+        "title": "Timket (Epiphany)",
+        "description": "Blessed remembrance of Christ's baptism in Jordan።",
+        "location": "Main Sanctuary & Procession",
+        "startTime": "6:00 AM",
+        "endTime": "12:00 PM"
+      },
+      "youth-retreat": {
+        "title": "Youth Spiritual Retreat",
+        "description": "Weekend of prayer፣ teaching & fellowship for young members።",
+        "location": "Retreat Center",
+        "startTime": "Friday 5:00 PM",
+        "endTime": "Sunday 12:00 PM"
+      },
+      "community-meal": {
+        "title": "Community Fellowship Meal",
+        "location": "Parish Hall",
+        "startTime": "1:00 PM",
+        "endTime": "4:00 PM",
+        "description": "A shared meal and fellowship after worship — all are welcome."
+      }
+    },
+    "categories": {
+      "Feast": "Feast",
+      "Liturgy": "Liturgy",
+      "Youth": "Youth",
+      "Fellowship": "Fellowship"
+    }
+  },
+  "timeline": {
+    "eyebrow": "ታሪካችን",
+    "title": "Faith Journey",
+    "description": "Small faithful families to thriving parish — our faith story።",
+    "items": {
+      "1998": {
+        "year": "1998",
+        "title": "Faith Seed",
+        "description": "Small group families for prayer gathered፣ foundation established።"
+      },
+      "2004": {
+        "year": "2004",
+        "title": "First Parish Home",
+        "description": "Dedicated worship space secured፣ first Divine Liturgy celebrated።"
+      },
+      "2012": {
+        "year": "2012",
+        "title": "Youth & Choir Flourish",
+        "description": "Sunday School፣ choir & youth ministries expanded።"
+      },
+      "2019": {
+        "year": "2019",
+        "title": "Sacred Expansion",
+        "description": "Renovations & outreach programs deepened worship & service።"
+      },
+      "today": {
+        "year": "Today",
+        "title": "Growing in Christ",
+        "description": "United in Ethiopian Orthodox faith — worshiping፣ teaching & serving with love።"
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "geEz": "ምስሎች",
+    "title": "Grace Moments",
+    "description": "Sacred glimpses of worship፣ fellowship & heritage።",
+    "pageTitle": "Gallery",
+    "pageSubtitle": "A living archive of worship፣ fellowship & sacred heritage።",
+    "fullDescription": "Browse photographs from Divine Liturgy፣ feast days፣ youth gatherings & parish life — captured in the spirit of our community።",
+    "photoCount": "{count} photographs",
+    "spotlight": "Featured",
+    "viewPhoto": "View full size",
+    "close": "Close",
+    "previous": "Previous image",
+    "next": "Next image",
+    "categories": {
+      "Worship": "Worship",
+      "Music": "Music",
+      "Feasts": "Feasts",
+      "Youth": "Youth",
+      "Outreach": "Outreach",
+      "Education": "Education",
+      "Church": "Church",
+      "Prayer": "Prayer",
+      "Liturgy": "Liturgy",
+      "Community": "Community",
+      "Heritage": "Heritage",
+      "Fellowship": "Fellowship",
+      "Ministry": "Ministry",
+      "Sacred": "Sacred",
+      "Faith": "Faith"
+    },
+    "alts": {
+      "1": "Divine Liturgy worship",
+      "2": "Sacred choir and mezmur",
+      "3": "Meskel feast celebration",
+      "4": "Youth fellowship gathering",
+      "5": "Community outreach service",
+      "6": "Sunday school teaching",
+      "7": "Church sanctuary",
+      "8": "Prayer and intercession",
+      "9": "Kidase liturgy",
+      "10": "Parish community",
+      "11": "Ethiopian Orthodox heritage",
+      "12": "Fellowship meal",
+      "13": "Ministry in action",
+      "14": "Sacred tradition",
+      "15": "Faith and worship"
+    }
+  },
+  "give": {
+    "eyebrow": "መስዋዕት",
+    "geEz": "መስዋዕት",
+    "title": "Generosity as Worship",
+    "cardTitle": "Sacred Mission Support",
+    "cardDescription": "Your generosity worship፣ outreach & spiritual formation sustains።",
+    "pageTitle": "መስዋዕት",
+    "pageSubtitle": "Your offering worship፣ ministry & outreach sustains።",
+    "integrationNote": "Online giving integration can be connected here.",
+    "mailNote": "Mail checks to parish address on Contact page."
+  },
+  "contact": {
+    "eyebrow": "ያግኙን",
+    "geEz": "አግኙን",
+    "title": "እንኳን ደህና መጡ",
+    "description": "Visit፣ call or message — we are here for you።",
+    "teaserDescription": "Divine Liturgy፣ fellowship & prayer visit us።",
+    "pageTitle": "ያግኙን",
+    "pageSubtitle": "ለጉብኝት፣ ለprayer ወይም pastoral care ያግኙን።",
+    "serviceSchedule": "የአገልግሎት መርሃ ግብር",
+    "nextService": "ቀጣይ አገልግሎት",
+    "scheduleNote": "በበዓላት እና በቅዱሳን ቀናት የአገልግሎት ሰዓቶች ሊለዩ ይችላሉ። ለማረጋገጥ እባክዎ ያግኙን።",
+    "planVisitEyebrow": "ጉብኝትዎን ያቅዱ",
+    "planVisitTitle": "እንኳን ደህና መጡ",
+    "planVisitNote": "ለመጀመሪያ ጊዜም ይሁን ለብዙ ጊዜ፣ እዚህ እንኳን ደህና መጡ። ለቅዳሴ፣ ለሕብረት እና ለጸሎት ይቀላቀሉን — ቀጠሮ አያስፈልግም።",
+    "mapTitle": "በፖርትላንድ ኦሬገን 17021 E Burnside St የሚገኘው ደብረ መንክራት ኪዳነ ምሕረት ቤተ ክርስትያን ካርታ",
+    "getDirections": "መንገድ ያግኙ",
+    "imageAlt": "ደብረ መንክራት ኪዳነ ምሕረት ቤተ ክርስትያን"
+  },
+  "about": {
+    "pageTitle": "ስለ ቤተ ክርስቲያናችን",
+    "pageSubtitle": "ቅዱስ ቅርስን በማስጠበቅ እያደገ ያለ የእምነት ማህበረሰብ።",
+    "paragraph1": "ደብረ መንክራት ኪዳነ ምሕረት የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተ ክርስትያን በፖርትላንድ ኦሬገን የሚገኝ ቤተ ክርስቲያን ሲሆን ለቅዱስ ሥላሴ አምልኮ፣ የመጽሐፍ ቅዱስ ትምህርት እና ለጎረቤታችን አገልግሎት የተወሰነ ነው።",
+    "paragraph2": "ክርስቶስን የሚፈልጉ ሁሉ እንኳን ደህና መጡ — በዚህ ቅርስ ውስጥ የተሰሩ ወይም ለመጀመሪያ ጊዜ የሚያውቁት። እዚህ ጸሎት፣ ማህበረሰብ እና በኦርቶዶክስ እምነት የሚመራ መንፈሳዊ እድገት ያገኛሉ።",
+    "imageAlt": "የቤተ ክርስቲያን ማህበረሰብ",
+    "intro": {
+      "eyebrow": "የቤተ ክርስቲያናችን",
+      "geEz": "ስለ እኛ",
+      "quote": "በኢትዮጵያ ጥንታዊ እምነት የተሰራ፣ በፖርትላንድ ሕያው ማህበረሰብ የሚያበቃ።",
+      "pillarsLabel": "እምነት፣ ማህበረሰብ፣ አገልግሎት",
+      "joinCta": "አባል ይሁኑ",
+      "imageCaption": "ፖርትላንድ፣ ኦሬገን"
+    },
+    "mission": {
+      "eyebrow": "ተልዕኳችን",
+      "geEz": "ግብ",
+      "title": "የማህበረሰቡ ግቦች",
+      "description": "በየቤተ ክርስቲያናችን ደንብል (አንቀጽ 5) እንደተገለጸው እንሞክራለን፦",
+      "objectives": {
+        "1": "ለአባላት ወንጌልን ማስተማር እና ከእግዚአብሔር ጋር ያላቸውን ግንኙነት ማጠናከር እና በመንገዱ ሕይወት ማሳደግ።",
+        "2": "የቅዱስ ቤተ ክርስቲያን አገልግሎቶችን ማሟላት እና መጠበቅ።",
+        "3": "የሰዎች ቁጥር ማሳደግ፣ በመንፈሳዊነት ማደግ እና በጽናት የክርስትያናዊ ሕይወት ማስተማር።",
+        "4": "በልዩ ዝግጅቶች እና በማህበረሰብ ግንኙነት የቅዱስ ቤተ ክርስቲያንን ዶግማ እና ታሪክ ማስተማር።",
+        "5": "የቤተ ክርስቲያኑን አስተዳደር ማጠናከር እና በሁሉም አቅጣጫ ራስን በማስተዳደር ላይ መሥራት።"
+      }
+    },
+    "legal": {
+      "eyebrow": "ሕጋዊ ሁኔታ",
+      "title": "የተመዘገበ ቤተ ክርስቲያን",
+      "nonprofit": "በኦሬገን ክልል እንደ 501(c)(3) ሃይማኖታዊ ትርፍ ያልተፈለገበት ድርጅት ተመዝግቧል።",
+      "taxExempt": "ቤተ ክርስቲያኑ የታክስ ነጻ ሁኔታ አለው — በሕግ የሚፈቀደው መጠን ለበጎ አድራጎት የሚሰጡ ስጦታዎች ታክስ ነጻ ሊሆኑ ይችላሉ።",
+      "bylawsDate": "የቤተ ክርስቲያኑ ደንብል በመስከረም 18፣ 2016 ተቀባይነት አግኝቷል።",
+      "affiliation": "በመንፈሳዊ አገልግሎቶች ጉዳዮች ላይ ከአዲስ አበባ፣ ኢትዮጵያ የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተ ክርስቲያን ቅዱስ ሲኖድ ጋር ተባባሪ ነው።",
+      "location": "ለአምልኮ በፖርትላንድ ኦሬገን 17021 E Burnside St፣ 97233 እንሰበሰባለን።",
+      "footer": "በኦሬገን ተመዝግቧል · ኢትዮጵያ ኦርቶዶክስ ተዋህዶ"
+    },
+    "bylaws": {
+      "eyebrow": "ደንብል",
+      "geEz": "ደንብል",
+      "title": "የቤተ ክርስቲያን ደንብል",
+      "description": "ለማንበብ PDF ያውርዱ፤ ለአዳራሽ ፕሮጀክተር ወይም ቲቪ በማሳያ አሳይን ይክፈቱ።",
+      "amharicTitle": "ደንብል — ኪዳነ ምሕረት (አማርኛ)",
+      "englishTitle": "Bylaws — English",
+      "primaryBadge": "የሚመከር",
+      "secondaryBadge": "እንዲሁም ይገኛል",
+      "primaryNote": "ለዚህ ቋንቋ የሚመከር ስሪት።",
+      "secondaryNote": "በሌላ ቋንቋም ይገኛል።",
+      "downloadPdf": "PDF አውርድ",
+      "preview": "ሰነድ አሳይ",
+      "present": "በማሳያ አሳይ",
+      "closePreview": "ዝጋ",
+      "prevPage": "ቀዳሚ",
+      "nextPage": "ቀጣይ",
+      "zoomIn": "አጉላ",
+      "zoomOut": "ቀንስ"
+    }
+  },
+  "governance": {
+    "eyebrow": "አስተዳደር",
+    "geEz": "አስተዳደር",
+    "title": "ቤተ ክርስቲያናችን እንዴት እንደሚመራ",
+    "description": "በደንባችን እንደተደነገገው፣ ቤተ ክርስቲያኑ በተመረጡ አካላት በተጠያቂነትና በግልጽነት ማህበረሰቡን በማገልገል ይመራል።",
+    "note": "ምዕመናን ያለ ክፍያ ያገለግላሉ፤ አስፈላጊ ካህናትና የተቀጠሩ ሠራተኞች ከዚህ ደንብ ነጻ ናቸው (ደንብ፣ አንቀጽ 2)።",
+    "bodies": {
+      "assembly": {
+        "title": "ጠቅላላ ጉባኤ",
+        "description": "የቤተ ክርስቲያኑ የበላይ አካል ሲሆን ሁሉንም አባላት ያካትታል። በዓመት ሁለት ጊዜ ተሰብስቦ በጀት ያጸድቃል፣ ሪፖርቶችን ይመረምራል እና ዋና ዋና ጉዳዮችን ይወስናል።"
+      },
+      "council": {
+        "title": "የጠቅላላ ጉባኤ ም/ቤት",
+        "description": "በየሁለት ወሩ ተሰብስቦ የዕለት ተዕለት ሥራዎችን፣ ፋይናንስን እና መንፈሳዊ አገልግሎቶችን የሚያስተዳድር የተመረጠ አስፈጻሚ አካል።"
+      },
+      "rector": {
+        "title": "የቤተ ክርስቲያኑ አስተዳዳሪ",
+        "description": "የማህበረሰቡ አስተዳዳሪ ሲሆን የቤተ ክርስቲያኑን መንፈሳዊ ሕይወትና አገልግሎቶች ይቆጣጠራል።"
+      },
+      "audit": {
+        "title": "የቁጥጥርና ኦዲት ኮሚቴ",
+        "description": "ገቢና ወጪን የሚያረጋግጡ እና ለጉባኤው ሪፖርት የሚያቀርቡ ሦስት የተመረጡ አባላት፣ የፋይናንስ ታማኝነትን ያረጋግጣሉ።"
+      },
+      "clergy": {
+        "title": "የካህናት አገልግሎት ም/ቤት",
+        "description": "በም/ቤቱ መሪነት የቅዳሴና የመንፈሳዊ አገልግሎት ክፍሎችን ይመራል።"
+      },
+      "services": {
+        "title": "የጠቅላላ አገልግሎት አስተዳደር",
+        "description": "በምክትል ሊቀመንበሩ የሚመራ ሲሆን የቤተ ክርስቲያኑን አስተዳደራዊና ድጋፍ ሰጪ ተግባራት ያስተባብራል።"
+      }
+    },
+    "board": {
+      "eyebrow": "የሰበካ ጉባዬ",
+      "titleAm": "የሰበካ ጉባዬ ሙሉ ስምና የስራ ድርሻዎቻቸው",
+      "titleEn": "Parish Council — Full Names & Responsibilities",
+      "subtitle": "በእምነት፣ በተጠያቂነት እና በማህበረሰብ ፍቅር ቤተ ክርስቲያኑን የሚመሩ የተመረጡ አገልጋዮች።",
+      "nameAm": "ሙሉ ስም",
+      "nameEn": "Full Name",
+      "roleAm": "የስራ ድርሻ",
+      "roleEn": "Responsibility",
+      "memberCount": "{count} የጉባዬ አባላት",
+      "footnote": "በቤተ ክርስቲያኑ ደንብ መሠረት ያለ ክፍያ የሚያገለግሉ።",
+      "tiers": {
+        "leadership": "አመራር",
+        "officer": "አመራር ባለሥልጣኖች",
+        "department": "ክፍሎች",
+        "committee": "ቁጥጥር ኮሚቴ"
+      },
+      "roles": {
+        "chairman": "ሊቀመንበር",
+        "vice-chairman": "ምክትል ሊቀመንበር",
+        "chief-secretary": "ዋና ፀሐፊ",
+        "accountant": "ሒሳብ ሹም",
+        "chief-treasurer": "ዋና ገንዘብ ያዥ",
+        "deputy-treasurer": "ምክትል ገንዘብ ያዥ",
+        "public-relations": "የህዝብ ግንኙነት",
+        "property": "ንብረት ክፍል",
+        "law": "የህግ ክፍል",
+        "audit-1": "ቁጥጥር ኮሚቴ",
+        "audit-2": "ቁጥጥር ኮሚቴ",
+        "audit-3": "ቁጥጥር ኮሚቴ"
+      }
+    }
+  },
+  "stats": {
+    "established": {
+      "value": "2016",
+      "label": "ደንብ የጸደቀበት"
+    },
+    "status": {
+      "value": "501(c)(3)",
+      "label": "የኦሬገን ግብረሰናይ"
+    },
+    "worship": {
+      "value": "በየሳምንቱ",
+      "label": "ቅዳሴ"
+    },
+    "location": {
+      "value": "ፖርትላንድ",
+      "label": "ኦሬገን፣ አሜሪካ"
+    }
+  },
+  "membership": {
+    "pageTitle": "የአባልነት ምዝገባ",
+    "pageSubtitle": "የቤተ ክርስቲያናችን ቤተሰብ ለመሆን ያመልክቱ።",
+    "eyebrow": "አባልነት",
+    "geEz": "አባልነት",
+    "sectionTitle": "የቤተ ክርስቲያናችን ቤተሰብ ይሁኑ",
+    "sectionDescription": "የአባልነት ማመልከታዎን በጥንቃቄ ይሙሉ። እያንዳንዱ ደረጃ የቤተ ክርስቲያኑ ቢሮ እንዲቀበልዎት ይረዳል።",
+    "sidebarEyebrow": "ቅዱስ ቃል ኪዳን",
+    "sidebarTitle": "ሕያው ቤተ ክርስቲያን ይሁኑ",
+    "sidebarDescription": "አባልነት ከምዝገባ በላይ ነው — በክርስቶስ አምልኮ፣ ማህበረሰብ እና አገልግሎት የተዋዋደ ቃል ኪዳን ነው።",
+    "benefitsTitle": "እንደ አባል",
+    "benefits": {
+      "worship": "በሙሉ በቅዱስ ቁርባን እና በቤተ ክርስቲያን ተካካይ ሕይወት መሳተፍ",
+      "community": "በፖርትላንድ የተሰራዘ የኢትዮጵያ ኦርቶዶክስ ሙሉ ቤተሰብ",
+      "sacraments": "የመንፈሳዊ አገልግሎት፣ ንስሐ እና መንፈሳዊ መመሪያ",
+      "service": "በአገልግሎቶች እና በማህበረሰብ አገልግሎት ለማገልገል እድል"
+    },
+    "processTitle": "እንዴት ይሰራል",
+    "process": {
+      "step1": "ይህንን ማመልከቻ ይሙሉ እና ያስገቡ",
+      "step2": "የቤተ ክርስቲያኑ ቢሮ መረጃዎን ይመለከታል",
+      "step3": "እንኳን ደህና መጡ — ወደ አባልነት እና የቤተ ክርስቲያን ሕይወት"
+    },
+    "needHelp": "ጥያቄ አለዎት?",
+    "needHelpNote": "የቤተ ክርስቲያኑ ቢሮ ሂደቱን ለማብራራት ደስተኛ ነው።"
+  },
+  "membershipForm": {
+    "churchNameAm": "በፖርትላንድ ኦሬገን የደብረ መንክራት ኪዳነ ምሕረት የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተ ክርስትያን",
+    "churchNameEn": "Debre Menkrat Kidane Miheret Ethiopian Orthodox Tewahedo Church, Portland, Oregon",
+    "formTitleAm": "የአባላት መመዝገቢያ ቅጽ",
+    "formTitleEn": "Membership Application Form",
+    "personalSection": "የግል መረጃ",
+    "fullNameAm": "ሙሉ ስም",
+    "fullName": "Full Name",
+    "baptismNameAm": "የክርስትና ስም",
+    "baptismName": "Baptism Name",
+    "spouseNameAm": "የባለቤት ስም",
+    "spouseName": "Spouse Name",
+    "spouseBaptismNameAm": "የክርስትና ስም",
+    "spouseBaptismName": "Spouse Baptism Name",
+    "addressAm": "አድራሻ",
+    "address": "Address",
+    "cityAm": "ከተማ",
+    "city": "City",
+    "stateAm": "ክልል",
+    "state": "State",
+    "zipAm": "ዚፕ",
+    "zip": "Zip",
+    "phoneAm": "ስልክ",
+    "phone": "Phone",
+    "mobilePhoneAm": "ሞባይል ስልክ",
+    "mobilePhone": "Mobile Phone",
+    "emailAm": "ኢ-ሜይል",
+    "email": "E-mail",
+    "registrationNoAm": "መዝገብ ቁጥር",
+    "registrationNo": "Registration No.",
+    "childrenSection": "ልጆች",
+    "childNameAm": "የልጆች ስም",
+    "childName": "Children's Name",
+    "childBaptismNameAm": "የክርስትና ስም",
+    "childBaptismName": "Baptism Name",
+    "birthDateAm": "የትውልድ ቀን",
+    "birthDate": "Birth Date",
+    "dependentsSection": "ቤተሰቦች",
+    "dependentNameAm": "አብረው የሚኖሩ ቤተሰቦች",
+    "dependentName": "Dependents",
+    "dependentBaptismNameAm": "የክርስትና ስም",
+    "dependentBaptismName": "Baptism Name",
+    "relationshipAm": "ዝምድና",
+    "relationship": "Relationship",
+    "membershipFeeAm": "አባልነት መዋጮ",
+    "membershipFee": "Membership Fee",
+    "feeOtherAm": "የተለየ",
+    "feeOther": "Other",
+    "paymentPreferenceAm": "የመክፈያ ዘዴ",
+    "paymentPreference": "Payment Preference",
+    "paymentMonthlyAm": "በየወሩ አውቶማቲክ መክፈያ",
+    "paymentMonthly": "Automatic monthly payment",
+    "paymentOnetimeAm": "አንድ ጊዜ መክፈያ",
+    "paymentOnetime": "One-time payment",
+    "signatureAm": "ፊርማ",
+    "signature": "Signature",
+    "dateAm": "ቀን",
+    "date": "Date",
+    "officeNote": "ከማስገባት በኋላ የቤተ ክርስቲያኑ ባለሥልጣን ምዝገባዎን ለማጠናቀቅ ያገኝዎታል።",
+    "thankYouTitle": "ምዝገባዎ ተቀብሏል",
+    "thankYou": "ለአባልነት ማመልከትዎ እናመሰግናለን። የቤተ ክርስቲያኑ ቢሮ ማመልከታዎን ይመለከታል እና በቅርቡ ያገኝዎታል።",
+    "thankYouContact": "የቤተ ክርስቲያን ቢሮ ያግኙ",
+    "familySection": "የቤተሰብ አባላት",
+    "steps": {
+      "personal": "ግል",
+      "contact": "አድራሻ",
+      "family": "ቤተሰብ",
+      "contribution": "መዋጮ",
+      "personalHint": "ስለ እርስዎ እና ባለቤትዎ (ካለ) ይንገሩን።",
+      "contactHint": "ቤተ ክርስቲያኑ እንዴት ያገኝዎታል?",
+      "familyHint": "በቤትዎ የሚኖሩ ልጆችን እና ተዛማጆችን ይዘርዝሩ። ከሌሉ ባዶ ይተው።",
+      "contributionHint": "የአባልነት መዋጮዎን ይምረጡ እና ማመልከቻዎን ለማጠናቀቅ ይፈርሙ።"
+    },
+    "nextStep": "ቀጥል",
+    "prevStep": "ተመለስ",
+    "addChild": "ሌላ ልጅ ጨምር",
+    "addDependent": "ሌላ ተዛማጅ ጨምር",
+    "removeRow": "ረድፍ {index} አስወግድ",
+    "rowCount": "{count, plural, one {# ረድፍ} other {# ረድፎች}}"
+  },
+  "footer": {
+    "visit": "Visit",
+    "contact": "Contact",
+    "connect": "Connect",
+    "resources": "መርጃዎች",
+    "bylaws": "የቤተ ክርስቲያን ደንብል",
+    "bylawsEnglishPdf": "Bylaws (English PDF)",
+    "bylawsAmharicPdf": "ደንብል (አማርኛ PDF)",
+    "membershipRegister": "አባልነት ምዝገባ",
+    "adminLogin": "የአስተዳዳሪ መግቢያ",
+    "copyright": "All rights reserved.",
+    "social": {
+      "youtube": "YouTube",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    }
+  },
+  "contactForm": {
+    "thankYou": "ስለ ማግኘትዎ እናመሰግናለን። መልእክትዎ ደርሶናል። በቅርቡ እንመልስልዎታለን።",
+    "sendAnother": "ሌላ መልእክት ላክ",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "subjects": {
+      "general": "General Inquiry",
+      "prayer": "Prayer Request",
+      "visit": "Visit / New Member",
+      "ministry": "Ministry"
+    }
+  },
+  "schedule": {
+    "note": "በበዓላት እና በቅዱሳን ቀናት የአገልግሎት ሰዓቶች ሊለዩ ይችላሉ። ለማረጋገጥ እባክዎ ያግኙን።",
+    "title": "የቤተ ክርስቲያን አገልግሎት",
+    "sundayTitle": "ዘወትር እሑድ",
+    "sundayRange": "ከጠዋቱ 6:00 AM እስከ 10:00 AM",
+    "sunday-liturgy": {
+      "day": "እሁድ",
+      "time": "6:00 AM – 10:00 AM",
+      "service": "የቤተ ክርስቲያን አገልግሎት"
+    },
+    "sundaySegments": {
+      "kidan": {
+        "time": "6:00 – 6:30 AM",
+        "service": "ፀሎተ ኪዳን"
+      },
+      "qidase": {
+        "time": "6:30 – 9:00 AM",
+        "service": "ሥርዓተ ቅዳሴ"
+      },
+      "mezmur": {
+        "time": "9:00 – 9:15 AM",
+        "service": "መዝሙር"
+      },
+      "teaching": {
+        "time": "9:15 – 9:40 AM",
+        "service": "ትምህርት፣ መልእከቶች"
+      },
+      "closing": {
+        "time": "9:40 – 10:00 AM",
+        "service": "የመዝጊያ ጸሎትና ፍጻሜ"
+      }
+    }
+  },
+  "sequence": {
+    "fallbackAlt": "Sacred instrument sequence",
+    "presets": {
+      "instruments": "Sacred Ethiopian instruments and Meskel cross",
+      "worship": "Sacred worship and liturgy",
+      "heritage": "Ethiopian Orthodox heritage",
+      "community": "Church community and fellowship"
+    }
+  },
+  "worship": {
+    "metadata": {
+      "title": "Worship Display",
+      "description": "Full-screen worship slide presentation for the sanctuary display."
+    },
+    "fallbackSlides": {
+      "opening": "Opening Prayer",
+      "hymn": "Hymn / Mezmur",
+      "liturgy": "Divine Liturgy"
+    },
+    "ui": {
+      "titleAm": "የአምልኮ ማሳያ",
+      "titleEn": "Worship Display Mode",
+      "presentations": "Presentations",
+      "present": "Present",
+      "preparing": "Preparing slides…",
+      "startFullscreen": "Start Fullscreen (All Slides)",
+      "uploadSlides": "Upload slides",
+      "uploading": "Uploading…",
+      "continueWithoutFs": "Continue without fullscreen",
+      "previousSlide": "Previous slide",
+      "nextSlide": "Next slide",
+      "auto": "Auto",
+      "fullscreen": "Fullscreen",
+      "exitFullscreen": "Exit FS",
+      "end": "End",
+      "upload": "+ Upload",
+      "slideUnavailable": "Slide unavailable",
+      "pageOf": "Page {current} of {total}",
+      "slideOf": "Slide {current} of {total}",
+      "spaceToAdvance": "Space to advance",
+      "pdf": "PDF",
+      "ppt": "PPT",
+      "slides": "Slides",
+      "helpUpload": "Upload a PDF or PowerPoint, or choose a presentation above to begin.",
+      "slidesReady": "Slides ready",
+      "syncFailed": "Could not sync slides",
+      "uploadFailed": "Upload failed"
+    },
+    "errors": {
+      "noPdf": "No PDF source",
+      "pdfLoadFailed": "Failed to load PDF"
+    }
+  }
+}

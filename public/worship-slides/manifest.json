@@ -1,0 +1,356 @@
+{
+  "version": 1,
+  "updatedAt": "2026-06-30T02:05:51.546Z",
+  "settings": {
+    "showCounter": true,
+    "autoPlay": {
+      "enabled": false,
+      "intervalSeconds": 10
+    },
+    "controlsHideDelayMs": 3500
+  },
+  "slides": [
+    {
+      "id": "slide-001",
+      "file": "slide-001.webp",
+      "title": "Opening Prayer",
+      "titleAm": "ክዳነመሀረት",
+      "order": 1
+    },
+    {
+      "id": "slide-002",
+      "file": "slide-002.webp",
+      "title": "Hymn / Mezmur",
+      "titleAm": "መዝሙር",
+      "order": 2
+    },
+    {
+      "id": "slide-003",
+      "file": "slide-003.webp",
+      "title": "Divine Liturgy",
+      "titleAm": "ቅዱስ ቁርባን",
+      "order": 3
+    },
+    {
+      "id": "bylaws-amharic-page-001",
+      "kind": "pdf-page",
+      "page": 1,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 1",
+      "order": 151
+    },
+    {
+      "id": "bylaws-amharic-page-002",
+      "kind": "pdf-page",
+      "page": 2,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 2",
+      "order": 152
+    },
+    {
+      "id": "bylaws-amharic-page-003",
+      "kind": "pdf-page",
+      "page": 3,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 3",
+      "order": 153
+    },
+    {
+      "id": "bylaws-amharic-page-004",
+      "kind": "pdf-page",
+      "page": 4,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 4",
+      "order": 154
+    },
+    {
+      "id": "bylaws-amharic-page-005",
+      "kind": "pdf-page",
+      "page": 5,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 5",
+      "order": 155
+    },
+    {
+      "id": "bylaws-amharic-page-006",
+      "kind": "pdf-page",
+      "page": 6,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 6",
+      "order": 156
+    },
+    {
+      "id": "bylaws-amharic-page-007",
+      "kind": "pdf-page",
+      "page": 7,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 7",
+      "order": 157
+    },
+    {
+      "id": "bylaws-amharic-page-008",
+      "kind": "pdf-page",
+      "page": 8,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 8",
+      "order": 158
+    },
+    {
+      "id": "bylaws-amharic-page-009",
+      "kind": "pdf-page",
+      "page": 9,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 9",
+      "order": 159
+    },
+    {
+      "id": "bylaws-amharic-page-010",
+      "kind": "pdf-page",
+      "page": 10,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 10",
+      "order": 160
+    },
+    {
+      "id": "bylaws-amharic-page-011",
+      "kind": "pdf-page",
+      "page": 11,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 11",
+      "order": 161
+    },
+    {
+      "id": "bylaws-amharic-page-012",
+      "kind": "pdf-page",
+      "page": 12,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 12",
+      "order": 162
+    },
+    {
+      "id": "bylaws-amharic-page-013",
+      "kind": "pdf-page",
+      "page": 13,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 13",
+      "order": 163
+    },
+    {
+      "id": "bylaws-amharic-page-014",
+      "kind": "pdf-page",
+      "page": 14,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 14",
+      "order": 164
+    },
+    {
+      "id": "bylaws-amharic-page-015",
+      "kind": "pdf-page",
+      "page": 15,
+      "sourceId": "bylaws-amharic",
+      "title": "Bylaws — Kidane Mihret (Amharic) — Page 15",
+      "order": 165
+    },
+    {
+      "id": "bylaws-english-page-001",
+      "kind": "pdf-page",
+      "page": 1,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 1",
+      "order": 166
+    },
+    {
+      "id": "bylaws-english-page-002",
+      "kind": "pdf-page",
+      "page": 2,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 2",
+      "order": 167
+    },
+    {
+      "id": "bylaws-english-page-003",
+      "kind": "pdf-page",
+      "page": 3,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 3",
+      "order": 168
+    },
+    {
+      "id": "bylaws-english-page-004",
+      "kind": "pdf-page",
+      "page": 4,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 4",
+      "order": 169
+    },
+    {
+      "id": "bylaws-english-page-005",
+      "kind": "pdf-page",
+      "page": 5,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 5",
+      "order": 170
+    },
+    {
+      "id": "bylaws-english-page-006",
+      "kind": "pdf-page",
+      "page": 6,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 6",
+      "order": 171
+    },
+    {
+      "id": "bylaws-english-page-007",
+      "kind": "pdf-page",
+      "page": 7,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 7",
+      "order": 172
+    },
+    {
+      "id": "bylaws-english-page-008",
+      "kind": "pdf-page",
+      "page": 8,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 8",
+      "order": 173
+    },
+    {
+      "id": "bylaws-english-page-009",
+      "kind": "pdf-page",
+      "page": 9,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 9",
+      "order": 174
+    },
+    {
+      "id": "bylaws-english-page-010",
+      "kind": "pdf-page",
+      "page": 10,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 10",
+      "order": 175
+    },
+    {
+      "id": "bylaws-english-page-011",
+      "kind": "pdf-page",
+      "page": 11,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 11",
+      "order": 176
+    },
+    {
+      "id": "bylaws-english-page-012",
+      "kind": "pdf-page",
+      "page": 12,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 12",
+      "order": 177
+    },
+    {
+      "id": "bylaws-english-page-013",
+      "kind": "pdf-page",
+      "page": 13,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 13",
+      "order": 178
+    },
+    {
+      "id": "bylaws-english-page-014",
+      "kind": "pdf-page",
+      "page": 14,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 14",
+      "order": 179
+    },
+    {
+      "id": "bylaws-english-page-015",
+      "kind": "pdf-page",
+      "page": 15,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 15",
+      "order": 180
+    },
+    {
+      "id": "bylaws-english-page-016",
+      "kind": "pdf-page",
+      "page": 16,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 16",
+      "order": 181
+    },
+    {
+      "id": "bylaws-english-page-017",
+      "kind": "pdf-page",
+      "page": 17,
+      "sourceId": "bylaws-english",
+      "title": "Bylaws — English — Page 17",
+      "order": 182
+    }
+  ],
+  "sources": [
+    {
+      "id": "example-set",
+      "note": "Placeholder slides — replace after converting PDF/PPT",
+      "originalFile": null,
+      "convertedAt": "2026-06-15",
+      "slideIds": [
+        "slide-001",
+        "slide-002",
+        "slide-003"
+      ]
+    },
+    {
+      "id": "bylaws-amharic",
+      "kind": "document",
+      "note": "Bylaws — Kidane Mihret (Amharic)",
+      "originalFile": "uploads/bylaws-amharic.pdf",
+      "convertedAt": "2026-06-30T02:05:49.333Z",
+      "pageCount": 15,
+      "slideIds": [
+        "bylaws-amharic-page-001",
+        "bylaws-amharic-page-002",
+        "bylaws-amharic-page-003",
+        "bylaws-amharic-page-004",
+        "bylaws-amharic-page-005",
+        "bylaws-amharic-page-006",
+        "bylaws-amharic-page-007",
+        "bylaws-amharic-page-008",
+        "bylaws-amharic-page-009",
+        "bylaws-amharic-page-010",
+        "bylaws-amharic-page-011",
+        "bylaws-amharic-page-012",
+        "bylaws-amharic-page-013",
+        "bylaws-amharic-page-014",
+        "bylaws-amharic-page-015"
+      ]
+    },
+    {
+      "id": "bylaws-english",
+      "kind": "document",
+      "note": "Bylaws — English",
+      "originalFile": "uploads/bylaws-english.pdf",
+      "convertedAt": "2026-06-30T02:05:51.546Z",
+      "pageCount": 17,
+      "slideIds": [
+        "bylaws-english-page-001",
+        "bylaws-english-page-002",
+        "bylaws-english-page-003",
+        "bylaws-english-page-004",
+        "bylaws-english-page-005",
+        "bylaws-english-page-006",
+        "bylaws-english-page-007",
+        "bylaws-english-page-008",
+        "bylaws-english-page-009",
+        "bylaws-english-page-010",
+        "bylaws-english-page-011",
+        "bylaws-english-page-012",
+        "bylaws-english-page-013",
+        "bylaws-english-page-014",
+        "bylaws-english-page-015",
+        "bylaws-english-page-016",
+        "bylaws-english-page-017"
+      ]
+    }
+  ]
+}

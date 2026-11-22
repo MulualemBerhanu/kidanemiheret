@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kidanemeheret Ethiopian Orthodox Church
 
-## Getting Started
+Premium cinematic Next.js website — sacred, modern, and Vercel-ready.
 
-First, run the development server:
+## Stack
+
+- Next.js App Router · TypeScript · Tailwind CSS v4
+- Framer Motion · GSAP ScrollTrigger · Lenis smooth scroll
+- React Three Fiber (hero accent only)
+- Canvas scroll image sequence (`ScrollImageSequence`)
+
+## Getting started
 
 ```bash
+npm install
+npm run assets    # generate placeholder images + sequence frames
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Scroll image sequence
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Place frames in `public/sequence/`:
 
-## Learn More
+```
+frame-0001.webp
+frame-0002.webp
+…
+frame-0021.webp
+```
 
-To learn more about Next.js, take a look at the following resources:
+To add more frames, add files and update `frameCount` in `SacredInstrumentDivider.tsx` (or pass a new count to `ScrollImageSequence`).
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Pattern default: `/sequence/frame-{frame}.webp`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Regenerate placeholders: `npm run assets`
 
-## Deploy on Vercel
+## Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy to [Vercel](https://vercel.com) — no extra configuration required.
+
+## Customize
+
+- Church info: `src/data/site.ts`
+- Ministries, events, gallery: `src/data/`
+- Colors & fonts: `src/app/globals.css`, `src/app/layout.tsx`

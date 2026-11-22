@@ -1,0 +1,676 @@
+{
+  "metadata": {
+    "home": {
+      "title": "Debre Menkrat Kidane Miheret Ethiopian Orthodox Tewahedo Church",
+      "description": "A sacred community rooted in Ethiopian Orthodox tradition — worship, fellowship, and service in Christ."
+    },
+    "about": {
+      "title": "About",
+      "description": "Learn about Debre Menkrat Kidane Miheret Church — our history, faith, and Ethiopian Orthodox heritage."
+    },
+    "ministries": {
+      "title": "Ministries",
+      "description": "Discover ministries at our parish — worship, education, outreach, and fellowship."
+    },
+    "events": {
+      "title": "Events",
+      "description": "Sacred gatherings, feasts, and fellowship events at our parish."
+    },
+    "gallery": {
+      "title": "Gallery",
+      "description": "Moments of worship, fellowship, and heritage at our parish."
+    },
+    "give": {
+      "title": "Give",
+      "description": "Support Debre Menkrat Kidane Miheret Ethiopian Orthodox Tewahedo Church through your generous giving."
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Visit, call, or message us — we welcome you."
+    },
+    "register": {
+      "title": "Membership Registration",
+      "description": "Apply for membership at Debre Menkrat Kidane Miheret Ethiopian Orthodox Tewahedo Church."
+    }
+  },
+  "site": {
+    "name": "Debre Menkrat Kidane Miheret Ethiopian Orthodox Tewahedo Church, Portland, Oregon",
+    "shortName": "Debre Menkrat Kidane Miheret",
+    "denomination": "Ethiopian Orthodox Tewahedo",
+    "tagline": "Faith. Heritage. Worship. Community.",
+    "subtitle": "Rooted in tradition. Guided by faith. Growing in Christ. Serving with love.",
+    "footerTagline": "Ethiopian Orthodox Tewahedo Church — worship, heritage, and community."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "ministries": "Ministries",
+    "events": "Events",
+    "gallery": "Gallery",
+    "give": "Give",
+    "register": "Join",
+    "contact": "Contact",
+    "mainAria": "Main navigation",
+    "toggleMenu": "Toggle menu"
+  },
+  "language": {
+    "english": "English",
+    "amharic": "አማርኛ",
+    "switchLabel": "Language"
+  },
+  "common": {
+    "give": "Give",
+    "scroll": "Scroll",
+    "upcoming": "Upcoming",
+    "learnMore": "Learn more",
+    "details": "Details →",
+    "viewAllMinistries": "View all ministries →",
+    "fullCalendar": "Full calendar →",
+    "viewFullGallery": "View full gallery →",
+    "ourStory": "Our Story",
+    "address": "Address",
+    "all": "All"
+  },
+  "buttons": {
+    "visitUs": "Visit Us",
+    "prayerRequest": "Prayer Request",
+    "planYourVisit": "Plan Your Visit",
+    "giveOnline": "Give Online",
+    "otherWaysToGive": "Other Ways to Give",
+    "sendMessage": "Send Message",
+    "submitRegistration": "Submit Registration",
+    "returnHome": "Return Home"
+  },
+  "chapters": {
+    "believe": {
+      "number": "01",
+      "title": "Believe",
+      "geEz": "እምነት"
+    },
+    "belong": {
+      "number": "02",
+      "title": "Belong",
+      "geEz": "ማህበረሰብ"
+    },
+    "become": {
+      "number": "03",
+      "title": "Become",
+      "geEz": "አገልግሎት"
+    }
+  },
+  "hero": {
+    "upcomingAria": "Upcoming event",
+    "imageAlt": "Sacred icon of the Virgin Mary and Christ Child"
+  },
+  "welcome": {
+    "eyebrow": "Welcome",
+    "geEz": "እንኳን ደህና መጡ",
+    "title": "A Living Tradition of Faith",
+    "description": "Debre Menkrat Kidane Miheret is a spiritual home where ancient Ethiopian Orthodox worship meets a vibrant, Christ-centered community. We invite you to experience the beauty of our liturgy, the warmth of fellowship, and the call to serve.",
+    "imageAlt": "Congregation in worship",
+    "imageQuote": "Where ancient liturgy meets a living community of faith.",
+    "imageCaption": "Portland, Oregon",
+    "highlightsLabel": "Parish highlights",
+    "highlights": {
+      "heritage": "Sacred Heritage",
+      "worship": "Divine Liturgy",
+      "community": "Warm Fellowship"
+    }
+  },
+  "ministries": {
+    "eyebrow": "Ministries",
+    "geEz": "አገልግሎት",
+    "title": "Serve & Grow Together",
+    "description": "Every member has a place to worship, learn, and serve in love.",
+    "pageTitle": "Ministries",
+    "pageSubtitle": "Serve the Lord and one another through gifts of time, talent, and love.",
+    "items": {
+      "sunday-school": {
+        "title": "Sunday School",
+        "description": "Nurturing young hearts in Scripture, Ethiopian Orthodox tradition, and Christ-centered living."
+      },
+      "choir": {
+        "title": "Choir Ministry",
+        "description": "Sacred melodies and mezmur that elevate worship and honor our heritage."
+      },
+      "youth": {
+        "title": "Youth Ministry",
+        "description": "Empowering the next generation through fellowship, service, and faithful discipleship."
+      },
+      "prayer": {
+        "title": "Prayer Ministry",
+        "description": "Intercession, fasting, and spiritual support for our church and community."
+      },
+      "outreach": {
+        "title": "Community Outreach",
+        "description": "Serving neighbors with love — food, care, and the light of Christ beyond our walls."
+      },
+      "women": {
+        "title": "Women's Ministry",
+        "description": "Fellowship, mentorship, and service among sisters in faith and love."
+      },
+      "men": {
+        "title": "Men's Ministry",
+        "description": "Brotherhood, accountability, and leadership rooted in Orthodox Christian values."
+      }
+    }
+  },
+  "events": {
+    "eyebrow": "Events",
+    "geEz": "በዓላት",
+    "title": "Sacred Gatherings",
+    "description": "Feasts, fellowship, and community moments throughout the year.",
+    "pageTitle": "Events",
+    "pageSubtitle": "Join us for feasts, fellowship, and sacred celebrations throughout the year.",
+    "items": {
+      "meskel": {
+        "title": "Meskel Celebration",
+        "description": "Feast of the Finding of the True Cross — processions and liturgy.",
+        "location": "Church Grounds",
+        "startTime": "10:00 AM",
+        "endTime": "2:00 PM"
+      },
+      "timket": {
+        "title": "Timket (Epiphany)",
+        "description": "Blessed remembrance of Christ's baptism in the Jordan.",
+        "location": "Main Sanctuary & Procession",
+        "startTime": "6:00 AM",
+        "endTime": "12:00 PM"
+      },
+      "youth-retreat": {
+        "title": "Youth Spiritual Retreat",
+        "description": "A weekend of prayer, teaching, and fellowship for young members.",
+        "location": "Retreat Center",
+        "startTime": "Friday 5:00 PM",
+        "endTime": "Sunday 12:00 PM"
+      },
+      "community-meal": {
+        "title": "Community Fellowship Meal",
+        "location": "Parish Hall",
+        "startTime": "1:00 PM",
+        "endTime": "4:00 PM",
+        "description": "A shared meal and fellowship after worship — all are welcome."
+      }
+    },
+    "categories": {
+      "Feast": "Feast",
+      "Liturgy": "Liturgy",
+      "Youth": "Youth",
+      "Fellowship": "Fellowship"
+    }
+  },
+  "timeline": {
+    "eyebrow": "Our Story",
+    "title": "A Journey of Faith",
+    "description": "From a small gathering of faithful families to a thriving parish — our story of faith.",
+    "items": {
+      "1998": {
+        "year": "1998",
+        "title": "A Seed of Faith",
+        "description": "A small group of families gathered for prayer, establishing the foundation of our parish."
+      },
+      "2004": {
+        "year": "2004",
+        "title": "First Parish Home",
+        "description": "The community secured a dedicated worship space, celebrating its first Divine Liturgy as a parish."
+      },
+      "2012": {
+        "year": "2012",
+        "title": "Youth & Choir Flourish",
+        "description": "Sunday School, choir, and youth ministries expanded, carrying tradition into new generations."
+      },
+      "2019": {
+        "year": "2019",
+        "title": "Sacred Expansion",
+        "description": "Renovations and outreach programs deepened worship and service to the wider community."
+      },
+      "today": {
+        "year": "Today",
+        "title": "Growing in Christ",
+        "description": "United in Ethiopian Orthodox faith — worshiping, teaching, and serving with love."
+      }
+    }
+  },
+  "gallery": {
+    "eyebrow": "Gallery",
+    "geEz": "ምስሎች",
+    "title": "Moments of Grace",
+    "description": "Sacred glimpses of worship, fellowship, and heritage at our parish.",
+    "pageTitle": "Gallery",
+    "pageSubtitle": "A living archive of worship, fellowship, and sacred heritage.",
+    "fullDescription": "Browse photographs from Divine Liturgy, feast days, youth gatherings, and parish life — captured in the spirit of our community.",
+    "photoCount": "{count} photographs",
+    "spotlight": "Featured",
+    "viewPhoto": "View full size",
+    "close": "Close",
+    "previous": "Previous image",
+    "next": "Next image",
+    "categories": {
+      "Worship": "Worship",
+      "Music": "Music",
+      "Feasts": "Feasts",
+      "Youth": "Youth",
+      "Outreach": "Outreach",
+      "Education": "Education",
+      "Church": "Church",
+      "Prayer": "Prayer",
+      "Liturgy": "Liturgy",
+      "Community": "Community",
+      "Heritage": "Heritage",
+      "Fellowship": "Fellowship",
+      "Ministry": "Ministry",
+      "Sacred": "Sacred",
+      "Faith": "Faith"
+    },
+    "alts": {
+      "1": "Divine Liturgy worship",
+      "2": "Sacred choir and mezmur",
+      "3": "Meskel feast celebration",
+      "4": "Youth fellowship gathering",
+      "5": "Community outreach service",
+      "6": "Sunday school teaching",
+      "7": "Church sanctuary",
+      "8": "Prayer and intercession",
+      "9": "Kidase liturgy",
+      "10": "Parish community",
+      "11": "Ethiopian Orthodox heritage",
+      "12": "Fellowship meal",
+      "13": "Ministry in action",
+      "14": "Sacred tradition",
+      "15": "Faith and worship"
+    }
+  },
+  "give": {
+    "eyebrow": "Give",
+    "geEz": "መስዋዕት",
+    "title": "Generosity as Worship",
+    "cardTitle": "Support Our Sacred Mission",
+    "cardDescription": "Your generosity sustains worship, outreach, and the spiritual formation of our community. Every gift is received with gratitude and prayer.",
+    "pageTitle": "Give",
+    "pageSubtitle": "Your offering helps sustain worship, ministry, and outreach.",
+    "integrationNote": "Online giving integration (Stripe, PayPal, or church platform) can be connected here.",
+    "mailNote": "Mail checks to the parish address listed on our Contact page."
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "geEz": "አግኙን",
+    "title": "We Welcome You",
+    "description": "Visit, call, or send a message — we are here for you.",
+    "teaserDescription": "Visit us for Divine Liturgy, fellowship, and prayer.",
+    "pageTitle": "Contact",
+    "pageSubtitle": "Reach out for visits, prayer, or pastoral care.",
+    "serviceSchedule": "Service Schedule",
+    "nextService": "Next Service",
+    "scheduleNote": "Service times may vary on feast days and holy days. Please contact us to confirm.",
+    "planVisitEyebrow": "Plan Your Visit",
+    "planVisitTitle": "We'd Love to Welcome You",
+    "planVisitNote": "Whether it's your first time or your hundredth, you are welcome here. Join us for Divine Liturgy, fellowship, and prayer — no appointment needed.",
+    "mapTitle": "Map showing Debre Menkrat Kidane Miheret Church at 17021 E Burnside St, Portland, Oregon",
+    "getDirections": "Get directions",
+    "imageAlt": "Debre Menkrat Kidane Miheret church"
+  },
+  "about": {
+    "pageTitle": "About Our Church",
+    "pageSubtitle": "Preserving sacred tradition while nurturing a living faith community.",
+    "paragraph1": "Debre Menkrat Kidane Miheret Ethiopian Orthodox Tewahedo Church is a parish of the Ethiopian Orthodox Tewahedo Church in Portland, Oregon, dedicated to the worship of the Holy Trinity, the teaching of Scripture, and service to our neighbors. Our liturgy, hymns, and customs connect us to centuries of Christian witness in Ethiopia and beyond.",
+    "paragraph2": "We welcome all who seek Christ — whether you are rooted in this tradition or discovering it for the first time. Here you will find prayer, fellowship, and a path of spiritual growth guided by Orthodox faith.",
+    "imageAlt": "Church community",
+    "intro": {
+      "eyebrow": "Our Parish",
+      "geEz": "ስለ እኛ",
+      "quote": "Rooted in Ethiopia's ancient faith, blossoming in Portland's living community.",
+      "pillarsLabel": "Believe, belong, become",
+      "joinCta": "Become a Member",
+      "imageCaption": "Portland, Oregon"
+    },
+    "mission": {
+      "eyebrow": "Our Mission",
+      "geEz": "ግብ",
+      "title": "Objectives of the Congregation",
+      "description": "As stated in our parish bylaws (Article 5), we strive to:",
+      "objectives": {
+        "1": "Preach the gospel to our members to deepen their relationship with God and maintain their life in His path.",
+        "2": "Fulfill and maintain the services of the Holy Church.",
+        "3": "Increase the number of parishioners, spiritually mature them, and enable them to live a disciplined Christian life with perseverance.",
+        "4": "Educate parishioners in the doctrine and history of the Holy Church through special events and community outreach.",
+        "5": "Strengthen church administration and pursue self-sufficiency in all directions."
+      }
+    },
+    "legal": {
+      "eyebrow": "Legal Status",
+      "title": "Registered Parish",
+      "nonprofit": "Registered as a 501(c)(3) religious nonprofit organization with the State of Oregon.",
+      "taxExempt": "The church holds tax-exempt status — charitable gifts may be tax-deductible to the extent allowed by law.",
+      "bylawsDate": "Parish bylaws adopted September 18, 2016.",
+      "affiliation": "An associate of the Holy Synod of the Ethiopian Orthodox Tewahedo Church in Addis Ababa, Ethiopia, in matters of spiritual services.",
+      "location": "We gather for worship at 17021 E Burnside St, Portland, Oregon 97233.",
+      "footer": "Oregon registered · Ethiopian Orthodox Tewahedo"
+    },
+    "bylaws": {
+      "eyebrow": "Governance",
+      "geEz": "ደንብል",
+      "title": "Church Bylaws",
+      "description": "Download the PDF to read, or open Present on screen for the hall projector or TV.",
+      "amharicTitle": "Bylaws — Kidane Miheret (Amharic)",
+      "englishTitle": "Bylaws — English",
+      "primaryBadge": "Recommended",
+      "secondaryBadge": "Also Available",
+      "primaryNote": "Recommended version for this language.",
+      "secondaryNote": "Also available in the other language.",
+      "downloadPdf": "Download PDF",
+      "preview": "Preview Document",
+      "present": "Present on screen",
+      "closePreview": "Close",
+      "prevPage": "Previous",
+      "nextPage": "Next",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out"
+    }
+  },
+  "governance": {
+    "eyebrow": "Governance",
+    "geEz": "አስተዳደር",
+    "title": "How Our Parish Is Led",
+    "description": "As set out in our bylaws, the church is led by elected bodies that serve the congregation with accountability and transparency.",
+    "note": "Parishioners serve without pay; essential clergy and hired staff are exempt from this rule (Bylaws, Article 2).",
+    "bodies": {
+      "assembly": {
+        "title": "General Assembly",
+        "description": "The supreme body of the church, made up of all members. It meets bi-annually to approve the budget, review reports, and decide major matters."
+      },
+      "council": {
+        "title": "General Congregation Council",
+        "description": "The elected executive body that meets bi-monthly to run day-to-day operations, finances, and spiritual services."
+      },
+      "rector": {
+        "title": "Cathedral Rector",
+        "description": "The administrator of the congregation, overseeing the spiritual life and services of the church."
+      },
+      "audit": {
+        "title": "Oversight & Audit Committee",
+        "description": "Three elected members who verify income and expenses and report to the assembly, ensuring financial integrity."
+      },
+      "clergy": {
+        "title": "Clergy Services Council",
+        "description": "Leads liturgical and spiritual service departments under the guidance of the Congregation Council."
+      },
+      "services": {
+        "title": "General Services Administration",
+        "description": "Led by the Vice Chairperson, it coordinates the church's administrative and support functions."
+      }
+    },
+    "board": {
+      "eyebrow": "Parish Council",
+      "titleAm": "የሰበካ ጉባዬ ሙሉ ስምና የስራ ድርሻዎቻቸው",
+      "titleEn": "Parish Council — Full Names & Responsibilities",
+      "subtitle": "Elected servants who lead our parish with faith, accountability, and love for the congregation.",
+      "nameAm": "ሙሉ ስም",
+      "nameEn": "Full Name",
+      "roleAm": "የስራ ድርሻ",
+      "roleEn": "Responsibility",
+      "memberCount": "{count} Council Members",
+      "footnote": "Serving without pay, in accordance with our church bylaws.",
+      "tiers": {
+        "leadership": "Leadership",
+        "officer": "Officers",
+        "department": "Departments",
+        "committee": "Control Committee"
+      },
+      "roles": {
+        "chairman": "Chairman",
+        "vice-chairman": "Vice Chairman",
+        "chief-secretary": "Chief Secretary",
+        "accountant": "Accountant",
+        "chief-treasurer": "Chief Treasurer",
+        "deputy-treasurer": "Deputy Treasurer",
+        "public-relations": "Public Relations",
+        "property": "Property Department",
+        "law": "Law Department",
+        "audit-1": "Control Committee",
+        "audit-2": "Control Committee",
+        "audit-3": "Control Committee"
+      }
+    }
+  },
+  "stats": {
+    "established": {
+      "value": "2016",
+      "label": "Bylaws Adopted"
+    },
+    "status": {
+      "value": "501(c)(3)",
+      "label": "Oregon Nonprofit"
+    },
+    "worship": {
+      "value": "Weekly",
+      "label": "Divine Liturgy"
+    },
+    "location": {
+      "value": "Portland",
+      "label": "Oregon, USA"
+    }
+  },
+  "membership": {
+    "pageTitle": "Membership Registration",
+    "pageSubtitle": "Apply to become a member of our parish family.",
+    "eyebrow": "Membership",
+    "geEz": "አባልነት",
+    "sectionTitle": "Join Our Parish Family",
+    "sectionDescription": "Complete your membership application with care. Each step helps our parish office welcome you into the life of our church.",
+    "sidebarEyebrow": "Sacred Commitment",
+    "sidebarTitle": "Belong to a Living Church",
+    "sidebarDescription": "Membership is more than registration — it is a covenant of worship, fellowship, and service in Christ.",
+    "benefitsTitle": "As a Member",
+    "benefits": {
+      "worship": "Full participation in Divine Liturgy and parish sacramental life",
+      "community": "A warm Ethiopian Orthodox family rooted in Portland",
+      "sacraments": "Pastoral care, confession, and spiritual guidance",
+      "service": "Opportunities to serve through ministries and outreach"
+    },
+    "processTitle": "How It Works",
+    "process": {
+      "step1": "Complete and submit this application",
+      "step2": "Parish office reviews your information",
+      "step3": "Welcome into membership and parish life"
+    },
+    "needHelp": "Questions?",
+    "needHelpNote": "Our parish office is happy to walk you through the process."
+  },
+  "membershipForm": {
+    "churchNameAm": "በፖርትላንድ ኦሬገን የደብረ መንክራት ኪዳነ ምሕረት የኢትዮጵያ ኦርቶዶክስ ተዋህዶ ቤተ ክርስትያን",
+    "churchNameEn": "Debre Menkrat Kidane Miheret Ethiopian Orthodox Tewahedo Church, Portland, Oregon",
+    "formTitleAm": "የአባላት መመዝገቢያ ቅጽ",
+    "formTitleEn": "Membership Application Form",
+    "personalSection": "Personal Information",
+    "fullNameAm": "ሙሉ ስም",
+    "fullName": "Full Name",
+    "baptismNameAm": "የክርስትና ስም",
+    "baptismName": "Baptism Name",
+    "spouseNameAm": "የባለቤት ስም",
+    "spouseName": "Spouse Name",
+    "spouseBaptismNameAm": "የክርስትና ስም",
+    "spouseBaptismName": "Spouse Baptism Name",
+    "addressAm": "አድራሻ",
+    "address": "Address",
+    "cityAm": "ከተማ",
+    "city": "City",
+    "stateAm": "ክልል",
+    "state": "State",
+    "zipAm": "ዚፕ",
+    "zip": "Zip",
+    "phoneAm": "ስልክ",
+    "phone": "Phone",
+    "mobilePhoneAm": "ሞባይል ስልክ",
+    "mobilePhone": "Mobile Phone",
+    "emailAm": "ኢ-ሜይል",
+    "email": "E-mail",
+    "registrationNoAm": "መዝገብ ቁጥር",
+    "registrationNo": "Registration No.",
+    "childrenSection": "Children",
+    "childNameAm": "የልጆች ስም",
+    "childName": "Children's Name",
+    "childBaptismNameAm": "የክርስትና ስም",
+    "childBaptismName": "Baptism Name",
+    "birthDateAm": "የትውልድ ቀን",
+    "birthDate": "Birth Date",
+    "dependentsSection": "Dependents",
+    "dependentNameAm": "አብረው የሚኖሩ ቤተሰቦች",
+    "dependentName": "Dependents",
+    "dependentBaptismNameAm": "የክርስትና ስም",
+    "dependentBaptismName": "Baptism Name",
+    "relationshipAm": "ዝምድና",
+    "relationship": "Relationship",
+    "membershipFeeAm": "አባልነት መዋጮ",
+    "membershipFee": "Membership Fee",
+    "feeOtherAm": "የተለየ",
+    "feeOther": "Other",
+    "paymentPreferenceAm": "የመክፈያ ዘዴ",
+    "paymentPreference": "Payment Preference",
+    "paymentMonthlyAm": "በየወሩ አውቶማቲክ መክፈያ",
+    "paymentMonthly": "Automatic monthly payment",
+    "paymentOnetimeAm": "አንድ ጊዜ መክፈያ",
+    "paymentOnetime": "One-time payment",
+    "signatureAm": "ፊርማ",
+    "signature": "Signature",
+    "dateAm": "ቀን",
+    "date": "Date",
+    "officeNote": "After submitting, a parish officer will contact you to complete your registration.",
+    "thankYouTitle": "Registration Received",
+    "thankYou": "Thank you for applying for membership. Our parish office will review your application and be in touch soon.",
+    "thankYouContact": "Contact Parish Office",
+    "familySection": "Family Members",
+    "steps": {
+      "personal": "Personal",
+      "contact": "Contact",
+      "family": "Family",
+      "contribution": "Contribution",
+      "personalHint": "Tell us about yourself and your spouse, if applicable.",
+      "contactHint": "How may the parish reach you?",
+      "familyHint": "List children and dependents living in your household. Leave blank if none.",
+      "contributionHint": "Select your membership contribution and sign to complete your application."
+    },
+    "nextStep": "Continue",
+    "prevStep": "Back",
+    "addChild": "Add Another Child",
+    "addDependent": "Add Another Dependent",
+    "removeRow": "Remove row {index}",
+    "rowCount": "{count, plural, one {# row} other {# rows}}"
+  },
+  "footer": {
+    "visit": "Visit",
+    "contact": "Contact",
+    "connect": "Connect",
+    "resources": "Resources",
+    "bylaws": "Church Bylaws",
+    "bylawsEnglishPdf": "Bylaws (English PDF)",
+    "bylawsAmharicPdf": "Bylaws (Amharic PDF)",
+    "membershipRegister": "Membership Registration",
+    "adminLogin": "Admin login",
+    "copyright": "All rights reserved.",
+    "social": {
+      "youtube": "YouTube",
+      "facebook": "Facebook",
+      "instagram": "Instagram"
+    }
+  },
+  "contactForm": {
+    "thankYou": "Thank you for reaching out. Your message has been received. We will get back to you soon.",
+    "sendAnother": "Send another message",
+    "name": "Name",
+    "email": "Email",
+    "subject": "Subject",
+    "message": "Message",
+    "subjects": {
+      "general": "General Inquiry",
+      "prayer": "Prayer Request",
+      "visit": "Visit / New Member",
+      "ministry": "Ministry"
+    }
+  },
+  "schedule": {
+    "note": "Service times may vary on feast days and holy days. Please contact us to confirm.",
+    "title": "Church Services",
+    "sundayTitle": "Every Sunday",
+    "sundayRange": "6:00 AM – 10:00 AM",
+    "sunday-liturgy": {
+      "day": "Sunday",
+      "time": "6:00 AM – 10:00 AM",
+      "service": "Church Service"
+    },
+    "sundaySegments": {
+      "kidan": {
+        "time": "6:00 – 6:30 AM",
+        "service": "Covenant Prayer (Tselote Kidan)"
+      },
+      "qidase": {
+        "time": "6:30 – 9:00 AM",
+        "service": "Divine Liturgy (Sirate Qidase)"
+      },
+      "mezmur": {
+        "time": "9:00 – 9:15 AM",
+        "service": "Mezmur (Hymns)"
+      },
+      "teaching": {
+        "time": "9:15 – 9:40 AM",
+        "service": "Teaching & Messages"
+      },
+      "closing": {
+        "time": "9:40 – 10:00 AM",
+        "service": "Closing Prayer & Conclusion"
+      }
+    }
+  },
+  "sequence": {
+    "fallbackAlt": "Sacred instrument sequence",
+    "presets": {
+      "instruments": "Sacred Ethiopian instruments and Meskel cross",
+      "worship": "Sacred worship and liturgy",
+      "heritage": "Ethiopian Orthodox heritage",
+      "community": "Church community and fellowship"
+    }
+  },
+  "worship": {
+    "metadata": {
+      "title": "Worship Display",
+      "description": "Full-screen worship slide presentation for the sanctuary display."
+    },
+    "fallbackSlides": {
+      "opening": "Opening Prayer",
+      "hymn": "Hymn / Mezmur",
+      "liturgy": "Divine Liturgy"
+    },
+    "ui": {
+      "titleAm": "የአምልኮ ማሳያ",
+      "titleEn": "Worship Display Mode",
+      "presentations": "Presentations",
+      "present": "Present",
+      "preparing": "Preparing slides…",
+      "startFullscreen": "Start Fullscreen (All Slides)",
+      "uploadSlides": "Upload slides",
+      "uploading": "Uploading…",
+      "continueWithoutFs": "Continue without fullscreen",
+      "previousSlide": "Previous slide",
+      "nextSlide": "Next slide",
+      "auto": "Auto",
+      "fullscreen": "Fullscreen",
+      "exitFullscreen": "Exit FS",
+      "end": "End",
+      "upload": "+ Upload",
+      "slideUnavailable": "Slide unavailable",
+      "pageOf": "Page {current} of {total}",
+      "slideOf": "Slide {current} of {total}",
+      "spaceToAdvance": "Space to advance",
+      "pdf": "PDF",
+      "ppt": "PPT",
+      "slides": "Slides",
+      "helpUpload": "Upload a PDF or PowerPoint, or choose a presentation above to begin.",
+      "slidesReady": "Slides ready",
+      "syncFailed": "Could not sync slides",
+      "uploadFailed": "Upload failed"
+    },
+    "errors": {
+      "noPdf": "No PDF source",
+      "pdfLoadFailed": "Failed to load PDF"
+    }
+  }
+}

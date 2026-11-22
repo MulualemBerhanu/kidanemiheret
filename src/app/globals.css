@@ -1,26 +1,254 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* The Living Sanctuary — design tokens */
+  --charcoal: #100d0b;
+  --charcoal-light: #1a1512;
+  --bronze-deep: #342116;
+  --ivory: #f7f3ea;
+  --cream: #f3eee4;
+  --gold: #b68a3e;
+  --gold-soft: #e9d5a7;
+  --gold-dim: #9a7234;
+  --amber: #c9a227;
+  --bronze: #8a6a3a;
+  --maroon: #641f24;
+  --background: var(--ivory);
+  --foreground: #121212;
+  --section-py: clamp(4rem, 8vw, 7rem);
+  --ease-sanctuary: cubic-bezier(0.22, 1, 0.36, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+  --shadow-soft: 0 18px 48px rgba(16, 13, 11, 0.12);
+  --shadow-deep: 0 24px 56px rgba(16, 13, 11, 0.35);
+  --container-max: 80rem;
+  /* Desktop fixed top nav (xl) — heroes start below this */
+  --site-nav-h: 4.75rem;
 }
 
 @theme inline {
+  --color-charcoal: var(--charcoal);
+  --color-charcoal-light: var(--charcoal-light);
+  --color-ivory: var(--ivory);
+  --color-cream: var(--cream);
+  --color-gold: var(--gold);
+  --color-amber: var(--amber);
+  --color-bronze: var(--bronze);
+  --color-maroon: var(--maroon);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-cormorant);
+  --font-amharic: var(--font-noto-ethiopic);
+  --font-amharic-display: var(--font-noto-serif-ethiopic);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-padding-top: 5.5rem;
+}
+
+/* Lenis handles smooth wheel on desktop — avoid double-smoothing */
+html:not(.scroll-native) {
+  scroll-behavior: auto;
+}
+
+html.scroll-native {
+  scroll-behavior: auto;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.font-display {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+.font-amharic {
+  font-family: var(--font-noto-ethiopic), var(--font-inter), system-ui, sans-serif;
+}
+
+/* Amharic typography — LTR, generous line height */
+html.locale-am body {
+  font-family: var(--font-noto-ethiopic), var(--font-inter), system-ui, sans-serif;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
+}
+
+html.locale-am .font-display {
+  font-family: var(--font-noto-serif-ethiopic), var(--font-cormorant), Georgia, serif;
+  line-height: 1.45;
+  letter-spacing: 0;
+}
+
+html.locale-am [class*="tracking-"] {
+  letter-spacing: 0.04em;
+}
+
+html.locale-am .text-gradient-gold {
+  line-height: 1.35;
+}
+
+::selection {
+  background: rgba(212, 175, 55, 0.35);
+  color: var(--ivory);
+}
+
+/* Premium utilities */
+.section-padding {
+  padding-top: var(--section-py);
+  padding-bottom: var(--section-py);
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, var(--gold-soft) 0%, var(--gold) 48%, var(--bronze-deep) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.glass-dark {
+  background: rgba(16, 13, 11, 0.88);
+  backdrop-filter: blur(18px) saturate(1.2);
+  -webkit-backdrop-filter: blur(18px) saturate(1.2);
+  border: 1px solid rgba(182, 138, 62, 0.22);
+}
+
+/* High-contrast gold text that stays readable over warm iconography */
+.text-hero-gold {
+  color: #e9d5a7;
+  text-shadow:
+    0 2px 20px rgba(0, 0, 0, 0.7),
+    0 0 1px rgba(0, 0, 0, 0.8);
+}
+
+.candlelight {
+  background:
+    radial-gradient(ellipse 55% 45% at 72% 38%, rgba(233, 213, 167, 0.18), transparent 62%),
+    radial-gradient(ellipse 40% 35% at 28% 55%, rgba(182, 138, 62, 0.1), transparent 55%);
+}
+
+.vignette {
+  background: radial-gradient(
+    ellipse 85% 75% at 50% 45%,
+    transparent 35%,
+    rgba(0, 0, 0, 0.55) 100%
+  );
+}
+
+.film-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 128px 128px;
+}
+
+.particle-dot {
+  animation: particle-float 6s ease-in-out infinite;
+  box-shadow: 0 0 6px rgba(212, 175, 55, 0.5);
+}
+
+@keyframes particle-float {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.25;
+  }
+  50% {
+    transform: translateY(-14px);
+    opacity: 0.75;
+  }
+}
+
+.hero-glow-pulse {
+  animation: glow-pulse 8s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+  0%,
+  100% {
+    opacity: 0.7;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+  }
+}
+
+@keyframes gallery-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-gallery-marquee {
+  animation: gallery-marquee 42s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particle-dot,
+  .hero-glow-pulse,
+  .animate-gallery-marquee {
+    animation: none;
+  }
+}
+
+/* Admin dashboard — match public site cream + charcoal + gold */
+html.admin {
+  scroll-padding-top: 0;
+}
+
+html.admin body.admin-body {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, rgba(212, 175, 55, 0.12), transparent 55%),
+    linear-gradient(180deg, #faf8f4 0%, #f3efe6 100%);
+  color: #121212;
+  font-family: var(--font-inter), system-ui, sans-serif;
+  min-height: 100%;
+}
+
+.admin-field {
+  width: 100%;
+  margin-top: 0.4rem;
+  border-radius: 2px;
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  background: #fff;
+  padding: 0.75rem 0.9rem;
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  color: #121212;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.admin-field::placeholder {
+  color: rgba(18, 18, 18, 0.35);
+}
+
+.admin-field:focus {
+  border-color: rgba(212, 175, 55, 0.7);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.15);
+}
+
+.admin-label {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(18, 18, 18, 0.55);
+}
+
+.admin-card {
+  border-radius: 2px;
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 18px 48px rgba(20, 16, 8, 0.08);
+  backdrop-filter: blur(10px);
 }

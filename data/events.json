@@ -1,0 +1,142 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-14T23:53:27.652Z",
+  "events": [
+    {
+      "id": "meskel",
+      "title": {
+        "en": "Meskel Celebration",
+        "am": "መስቀል በዓል"
+      },
+      "description": {
+        "en": "Feast of the Finding of the True Cross — processions and liturgy.",
+        "am": "የእውነተኛው መስቀል መገኘት በዓል — ሰልፍ እና ቅዳሴ።"
+      },
+      "location": {
+        "en": "Church Grounds",
+        "am": "የቤተ ክርስቲያን ግቢ"
+      },
+      "startDate": "2026-09-27",
+      "startTime": "10:00 AM",
+      "endTime": "2:00 PM",
+      "dtStart": "2026-09-27T10:00:00",
+      "dtEnd": "2026-09-27T14:00:00",
+      "timezone": "America/Los_Angeles",
+      "categories": [
+        "Feast",
+        "Liturgy"
+      ],
+      "flyerImage": "/images/editorial/events/meskel.jpg",
+      "published": true,
+      "updatedAt": "2026-11-14T00:00:00.000Z"
+    },
+    {
+      "id": "timket",
+      "title": {
+        "en": "Timket (Epiphany)",
+        "am": "ጥምቀት"
+      },
+      "description": {
+        "en": "Blessed remembrance of Christ's baptism in the Jordan.",
+        "am": "የክርስቶስ ጥምቀት በዮርዳኖስ መታሰቢያ።"
+      },
+      "location": {
+        "en": "Main Sanctuary & Procession",
+        "am": "ዋናው ቤተ መቅደስ እና ሰልፍ"
+      },
+      "startDate": "2027-01-19",
+      "startTime": "6:00 AM",
+      "endTime": "12:00 PM",
+      "dtStart": "2027-01-19T06:00:00",
+      "dtEnd": "2027-01-19T12:00:00",
+      "timezone": "America/Los_Angeles",
+      "categories": [
+        "Feast"
+      ],
+      "flyerImage": "/images/editorial/events/timket.jpg",
+      "published": true,
+      "updatedAt": "2026-11-14T00:00:00.000Z"
+    },
+    {
+      "id": "youth-retreat",
+      "title": {
+        "en": "Youth Spiritual Retreat",
+        "am": "የወጣቶች መንፈሳዊ ሪትሪት"
+      },
+      "description": {
+        "en": "A weekend of prayer, teaching, and fellowship for young members.",
+        "am": "ለወጣት አባላት የጸሎት፣ ትምህርት እና ኅብረት ቅዳሜ-እሁድ።"
+      },
+      "location": {
+        "en": "Retreat Center",
+        "am": "ሪትሪት ማዕከል"
+      },
+      "startDate": "2026-08-15",
+      "endDate": "2026-08-17",
+      "startTime": "Friday 5:00 PM",
+      "endTime": "Sunday 12:00 PM",
+      "dtStart": "2026-08-15T17:00:00",
+      "dtEnd": "2026-08-17T12:00:00",
+      "timezone": "America/Los_Angeles",
+      "categories": [
+        "Youth"
+      ],
+      "flyerImage": "/images/events/uploads/mariyam-sidet-mwh29un5.webp",
+      "published": true,
+      "updatedAt": "2026-11-14T23:53:15.775Z"
+    },
+    {
+      "id": "community-meal",
+      "title": {
+        "en": "Community Fellowship Meal",
+        "am": "የማኅበረሰብ ኅብረት ምግብ"
+      },
+      "description": {
+        "en": "A shared meal and fellowship after worship — all are welcome.",
+        "am": "ከአምልኮ በኋላ የጋራ ምግብ እና ኅብረት — ሁሉም እንኳን ደህና መጡ።"
+      },
+      "location": {
+        "en": "Parish Hall",
+        "am": "የቤተ ክርስቲያን አዳራሽ"
+      },
+      "startDate": "2026-07-12",
+      "startTime": "1:00 PM",
+      "endTime": "4:00 PM",
+      "dtStart": "2026-07-12T13:00:00",
+      "dtEnd": "2026-07-12T16:00:00",
+      "timezone": "America/Los_Angeles",
+      "categories": [
+        "Fellowship"
+      ],
+      "flyerImage": "/images/editorial/events/community-meal.jpg",
+      "published": true,
+      "updatedAt": "2026-11-14T00:00:00.000Z"
+    },
+    {
+      "id": "mesekel-20261125",
+      "title": {
+        "en": "mesekel",
+        "am": ""
+      },
+      "description": {
+        "en": "meskel beal akebaber",
+        "am": ""
+      },
+      "location": {
+        "en": "church",
+        "am": ""
+      },
+      "startDate": "2026-11-25",
+      "endDate": "2026-11-18",
+      "startTime": "10:00AM",
+      "endTime": "2:00PM",
+      "dtStart": "2026-11-25T10:00:00",
+      "dtEnd": "2026-11-18T14:00:00",
+      "timezone": "America/Los_Angeles",
+      "categories": [],
+      "flyerImage": "/images/events/uploads/km-copy-mwh255pt.webp",
+      "published": false,
+      "updatedAt": "2026-11-14T23:53:27.652Z"
+    }
+  ]
+}
