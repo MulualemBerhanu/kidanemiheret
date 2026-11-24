@@ -2,8 +2,8 @@
  * Tiered image manifest — replace placeholders in /public/images/editorial/
  * See public/images/ASSETS.md for the full upload checklist.
  *
- * Page heroes use /images/heroes/* staged frames (full art, 2:1) so the
- * complete image shows across desktop / tablet / mobile.
+ * Page heroes use /images/heroes/* staged 2:1 frames. HeroMedia shows them
+ * with object-contain + edge blur so framing stays identical on every device.
  */
 
 export const editorialImages = {

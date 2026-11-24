@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import { HeroMedia } from "@/components/layout/HeroMedia";
 import { SectionReveal } from "@/components/effects/SectionReveal";
 import { SacredEyebrow } from "@/components/ui/SacredEyebrow";
 import { usePrefersReducedMotion } from "@/lib/motion";
@@ -70,7 +70,7 @@ export function GalleryPageHero({
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="absolute inset-0 xl:top-[var(--site-nav-h)]" aria-hidden>
+      <div className="absolute inset-0" aria-hidden>
         <AnimatePresence mode="wait">
           <motion.div
             key={active.id}
@@ -80,24 +80,7 @@ export function GalleryPageHero({
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
             className="absolute inset-0"
           >
-            {/* Edge-matched blur + full-bleed cover (no side gaps) */}
-            <Image
-              src={active.src}
-              alt=""
-              fill
-              priority={index === 0}
-              className="scale-[1.25] object-cover opacity-80 blur-3xl"
-              sizes="100vw"
-              aria-hidden
-            />
-            <Image
-              src={active.src}
-              alt=""
-              fill
-              priority={index === 0}
-              className="object-cover object-center opacity-95"
-              sizes="100vw"
-            />
+            <HeroMedia src={active.src} priority={index === 0} quality={90} />
           </motion.div>
         </AnimatePresence>
       </div>

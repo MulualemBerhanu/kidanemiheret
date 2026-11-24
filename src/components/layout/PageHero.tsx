@@ -1,5 +1,5 @@
-import Image from "next/image";
 import { getTranslations } from "next-intl/server";
+import { HeroMedia } from "@/components/layout/HeroMedia";
 import { SectionReveal } from "@/components/effects/SectionReveal";
 import { SacredEyebrow } from "@/components/ui/SacredEyebrow";
 import { cn } from "@/lib/utils";
@@ -8,13 +8,9 @@ interface PageHeroProps {
   title: string;
   subtitle?: string;
   backgroundSrc?: string;
-  /** Which part of the background image to keep in frame (cover mode) */
+  /** Kept for API compatibility; framing is always full-image + edge fill */
   backgroundPosition?: "top" | "center" | "bottom";
-  /**
-   * contain = favor full sacred art; on desktop the hero starts under the nav
-   * and shows the whole image (edge-matched blur fills any gaps).
-   * cover = fill the media area (editorial photos).
-   */
+  /** Kept for API compatibility; all heroes use consistent contain framing */
   imageFit?: "cover" | "contain";
   /** Taller cinematic About-style hero */
   variant?: "default" | "cinematic";
@@ -24,13 +20,10 @@ export async function PageHero({
   title,
   subtitle,
   backgroundSrc,
-  backgroundPosition = "center",
-  imageFit = "cover",
   variant = "default",
 }: PageHeroProps) {
   const t = await getTranslations("site");
   const cinematic = variant === "cinematic";
-  const contain = imageFit === "contain";
 
   return (
     <section
@@ -42,42 +35,14 @@ export async function PageHero({
       )}
     >
       {backgroundSrc && (
-        <div className="absolute inset-0 xl:top-[var(--site-nav-h)]">
-          {/* Edge-matched fill behind the hero image */}
-          <Image
-            src={backgroundSrc}
-            alt=""
-            fill
-            className="scale-[1.25] object-cover opacity-80 blur-3xl"
-            sizes="100vw"
-            priority
-            quality={60}
-            aria-hidden
-          />
-          <Image
-            src={backgroundSrc}
-            alt=""
-            fill
-            className={cn(
-              cinematic ? "opacity-95" : "opacity-90",
-              // Fill edge-to-edge (no side gaps); desktop media still starts under the nav
-              "object-cover",
-              contain
-                ? "object-[center_28%] sm:object-[center_32%] xl:object-center"
-                : [
-                    backgroundPosition === "top" && "object-top",
-                    backgroundPosition === "center" && "object-center",
-                    backgroundPosition === "bottom" && "object-bottom",
-                  ]
-            )}
-            sizes="100vw"
-            priority
-            quality={cinematic ? 90 : 85}
-          />
-        </div>
+        <HeroMedia
+          src={backgroundSrc}
+          priority
+          quality={cinematic ? 90 : 85}
+          opacity={cinematic ? 0.95 : 0.92}
+        />
       )}
 
-      {/* Soft luminous overlays — keep art bright */}
       <div
         className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/15 to-transparent xl:top-[var(--site-nav-h)] md:from-black/35 md:via-transparent"
         aria-hidden

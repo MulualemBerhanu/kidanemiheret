@@ -1,10 +1,10 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 import { editorialImages } from "@/data/images";
 import type { ChurchEvent } from "@/data/events";
+import { HeroMedia } from "@/components/layout/HeroMedia";
 import { Navbar } from "@/components/layout/Navbar";
 import { Link } from "@/i18n/navigation";
 import { MeskelCross } from "@/components/effects/MeskelCross";
@@ -26,28 +26,15 @@ export function HeroSectionClient({ upcomingEvent }: HeroSectionClientProps) {
     <section className="relative min-h-[100dvh] overflow-hidden bg-[#1a1510]">
       <Navbar transparent />
 
-      <div className="absolute inset-0 xl:top-[var(--site-nav-h)]">
-        <Image
-          src={editorialImages.hero}
-          alt=""
-          fill
-          priority
-          quality={60}
-          className="scale-[1.25] object-cover opacity-80 blur-3xl"
-          sizes="100vw"
-          aria-hidden
-        />
-        <Image
+      <div className="absolute inset-0">
+        <HeroMedia
           src={editorialImages.hero}
           alt={tHero("imageAlt")}
-          fill
           priority
           quality={92}
-          className="object-cover object-[center_22%] sm:object-[center_28%] xl:object-center"
-          sizes="100vw"
         />
         <div
-          className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent md:from-black/35 md:via-transparent"
+          className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent xl:top-[var(--site-nav-h)] md:from-black/35 md:via-transparent"
           aria-hidden
         />
         <div
@@ -55,7 +42,7 @@ export function HeroSectionClient({ upcomingEvent }: HeroSectionClientProps) {
           aria-hidden
         />
         <div
-          className="absolute inset-0 bg-[radial-gradient(ellipse_at_65%_40%,rgba(255,236,180,0.1),transparent_50%)]"
+          className="absolute inset-0 bg-[radial-gradient(ellipse_at_65%_40%,rgba(255,236,180,0.1),transparent_50%)] xl:top-[var(--site-nav-h)]"
           aria-hidden
         />
       </div>
