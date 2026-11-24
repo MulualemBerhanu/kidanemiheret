@@ -70,6 +70,13 @@ export function GalleryPageHero({
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
+      {/* Clear band for the floating menu — hero image starts below */}
+      <div
+        className="absolute inset-x-0 top-0 z-[1] bg-[#f7f3ea]"
+        style={{ height: "var(--site-nav-clearance)" }}
+        aria-hidden
+      />
+
       <div className="absolute inset-0" aria-hidden>
         <AnimatePresence mode="wait">
           <motion.div
@@ -86,7 +93,8 @@ export function GalleryPageHero({
       </div>
 
       <div
-        className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent md:from-black/35 md:via-transparent"
+        className="absolute inset-x-0 bottom-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent md:from-black/35 md:via-transparent"
+        style={{ top: "var(--site-nav-clearance)" }}
         aria-hidden
       />
       <div
@@ -98,7 +106,8 @@ export function GalleryPageHero({
         type="button"
         onClick={() => go(index - 1)}
         aria-label={t("previous")}
-        className="absolute left-3 top-1/2 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center border border-white/30 bg-[#f7f3ea]/80 text-lg text-[#1a1510] backdrop-blur-sm transition-all hover:bg-[#f7f3ea] sm:left-5 sm:h-10 sm:w-10 md:left-8"
+        className="absolute left-3 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center border border-white/30 bg-[#f7f3ea]/80 text-lg text-[#1a1510] backdrop-blur-sm transition-all hover:bg-[#f7f3ea] sm:left-5 sm:h-10 sm:w-10 md:left-8"
+        style={{ top: "calc((100% + var(--site-nav-clearance)) / 2)" }}
       >
         ‹
       </button>
@@ -106,7 +115,8 @@ export function GalleryPageHero({
         type="button"
         onClick={() => go(index + 1)}
         aria-label={t("next")}
-        className="absolute right-3 top-1/2 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center border border-white/30 bg-[#f7f3ea]/80 text-lg text-[#1a1510] backdrop-blur-sm transition-all hover:bg-[#f7f3ea] sm:right-5 sm:h-10 sm:w-10 md:right-8"
+        className="absolute right-3 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center border border-white/30 bg-[#f7f3ea]/80 text-lg text-[#1a1510] backdrop-blur-sm transition-all hover:bg-[#f7f3ea] sm:right-5 sm:h-10 sm:w-10 md:right-8"
+        style={{ top: "calc((100% + var(--site-nav-clearance)) / 2)" }}
       >
         ›
       </button>

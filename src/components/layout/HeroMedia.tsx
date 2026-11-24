@@ -13,9 +13,9 @@ interface HeroMediaProps {
 
 /**
  * Consistent hero framing across devices.
- * Blurred ambient fill covers the hero; sharp art uses object-contain
- * so the full composition is identical on phone, tablet, and desktop
- * (never crops differently per viewport).
+ * Media always starts below the floating menu (no overlap).
+ * Blurred ambient fill + object-contain keeps the full composition
+ * identical on phone, tablet, and desktop.
  */
 export function HeroMedia({
   src,
@@ -26,14 +26,17 @@ export function HeroMedia({
   className,
 }: HeroMediaProps) {
   return (
-    <div className={cn("absolute inset-0", className)}>
+    <div
+      className={cn("absolute inset-x-0 bottom-0", className)}
+      style={{ top: "var(--site-nav-clearance)" }}
+    >
       <Image
         src={src}
         alt=""
         fill
         priority={priority}
         quality={55}
-        className="scale-[1.35] object-cover opacity-90 blur-3xl"
+        className="scale-[1.2] object-cover opacity-90 blur-3xl"
         sizes="100vw"
         aria-hidden
       />

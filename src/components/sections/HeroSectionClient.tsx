@@ -27,6 +27,12 @@ export function HeroSectionClient({ upcomingEvent }: HeroSectionClientProps) {
       <Navbar transparent />
 
       <div className="absolute inset-0">
+        {/* Clear band for the floating menu — hero image starts below */}
+        <div
+          className="absolute inset-x-0 top-0 z-[1] bg-[#f7f3ea]"
+          style={{ height: "var(--site-nav-clearance)" }}
+          aria-hidden
+        />
         <HeroMedia
           src={editorialImages.hero}
           alt={tHero("imageAlt")}
@@ -34,7 +40,8 @@ export function HeroSectionClient({ upcomingEvent }: HeroSectionClientProps) {
           quality={92}
         />
         <div
-          className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent md:from-black/35 md:via-transparent"
+          className="absolute inset-x-0 bottom-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent md:from-black/35 md:via-transparent"
+          style={{ top: "var(--site-nav-clearance)" }}
           aria-hidden
         />
         <div
@@ -42,7 +49,8 @@ export function HeroSectionClient({ upcomingEvent }: HeroSectionClientProps) {
           aria-hidden
         />
         <div
-          className="absolute inset-0 bg-[radial-gradient(ellipse_at_65%_40%,rgba(255,236,180,0.1),transparent_50%)]"
+          className="absolute inset-x-0 bottom-0 bg-[radial-gradient(ellipse_at_65%_40%,rgba(255,236,180,0.1),transparent_50%)]"
+          style={{ top: "var(--site-nav-clearance)" }}
           aria-hidden
         />
       </div>

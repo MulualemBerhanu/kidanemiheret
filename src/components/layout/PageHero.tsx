@@ -34,6 +34,13 @@ export async function PageHero({
           : "min-h-[48svh] pt-28 pb-12 sm:min-h-[55svh] sm:pt-32 sm:pb-16 md:min-h-[62vh] md:pb-20 lg:min-h-[68vh]"
       )}
     >
+      {/* Clear band for the floating menu — hero image starts below */}
+      <div
+        className="absolute inset-x-0 top-0 z-[1] bg-[#f7f3ea]"
+        style={{ height: "var(--site-nav-clearance)" }}
+        aria-hidden
+      />
+
       {backgroundSrc && (
         <HeroMedia
           src={backgroundSrc}
@@ -44,7 +51,8 @@ export async function PageHero({
       )}
 
       <div
-        className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/15 to-transparent md:from-black/35 md:via-transparent"
+        className="absolute inset-x-0 bottom-0 bg-gradient-to-r from-black/40 via-black/15 to-transparent md:from-black/35 md:via-transparent"
+        style={{ top: "var(--site-nav-clearance)" }}
         aria-hidden
       />
       <div
@@ -52,7 +60,8 @@ export async function PageHero({
         aria-hidden
       />
       <div
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_40%,rgba(255,236,180,0.1),transparent_55%)]"
+        className="absolute inset-x-0 bottom-0 bg-[radial-gradient(ellipse_at_70%_40%,rgba(255,236,180,0.1),transparent_55%)]"
+        style={{ top: "var(--site-nav-clearance)" }}
         aria-hidden
       />
 

@@ -22,6 +22,20 @@
   --shadow-soft: 0 18px 48px rgba(16, 13, 11, 0.12);
   --shadow-deep: 0 24px 56px rgba(16, 13, 11, 0.35);
   --container-max: 80rem;
+  /* Floating glass menu: top inset + bar + gap — heroes start below */
+  --site-nav-clearance: 6.75rem;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --site-nav-clearance: 7.25rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --site-nav-clearance: 7.75rem;
+  }
 }
 
 @theme inline {
