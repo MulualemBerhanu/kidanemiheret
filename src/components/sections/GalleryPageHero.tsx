@@ -66,81 +66,80 @@ export function GalleryPageHero({
 
   return (
     <section
-      className="relative flex min-h-[48svh] items-end overflow-hidden bg-[#1a1510] pt-28 pb-12 sm:min-h-[55svh] sm:pt-32 sm:pb-16 md:min-h-[62vh] md:pb-20 lg:min-h-[68vh]"
+      className="relative overflow-hidden bg-[#f7f3ea]"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      {/* Clear band for the floating menu — hero image starts below */}
+      {/* Real layout spacer — image cannot sit under the menu */}
       <div
-        className="absolute inset-x-0 top-0 z-[1] bg-[#f7f3ea]"
-        style={{ height: "var(--site-nav-clearance)" }}
+        className="w-full shrink-0 bg-[#f7f3ea]"
+        style={{ height: "var(--site-nav-clearance, 7rem)" }}
         aria-hidden
       />
 
-      <div className="absolute inset-0" aria-hidden>
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={active.id}
-            initial={reduced ? false : { opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={reduced ? undefined : { opacity: 0 }}
-            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="absolute inset-0"
-          >
-            <HeroMedia src={active.src} priority={index === 0} quality={90} />
-          </motion.div>
-        </AnimatePresence>
-      </div>
+      <div className="relative flex min-h-[40svh] items-end overflow-hidden bg-[#1a1510] pb-12 sm:min-h-[46svh] sm:pb-16 md:min-h-[54svh] md:pb-20 lg:min-h-[60svh]">
+        <div className="absolute inset-0" aria-hidden>
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={active.id}
+              initial={reduced ? false : { opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={reduced ? undefined : { opacity: 0 }}
+              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+              className="absolute inset-0"
+            >
+              <HeroMedia src={active.src} priority={index === 0} quality={90} />
+            </motion.div>
+          </AnimatePresence>
+        </div>
 
-      <div
-        className="absolute inset-x-0 bottom-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent md:from-black/35 md:via-transparent"
-        style={{ top: "var(--site-nav-clearance)" }}
-        aria-hidden
-      />
-      <div
-        className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#100d0b] via-[#100d0b]/50 to-transparent sm:h-44"
-        aria-hidden
-      />
+        <div
+          className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent md:from-black/35 md:via-transparent"
+          aria-hidden
+        />
+        <div
+          className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#100d0b] via-[#100d0b]/50 to-transparent sm:h-44"
+          aria-hidden
+        />
 
-      <button
-        type="button"
-        onClick={() => go(index - 1)}
-        aria-label={t("previous")}
-        className="absolute left-3 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center border border-white/30 bg-[#f7f3ea]/80 text-lg text-[#1a1510] backdrop-blur-sm transition-all hover:bg-[#f7f3ea] sm:left-5 sm:h-10 sm:w-10 md:left-8"
-        style={{ top: "calc((100% + var(--site-nav-clearance)) / 2)" }}
-      >
-        ‹
-      </button>
-      <button
-        type="button"
-        onClick={() => go(index + 1)}
-        aria-label={t("next")}
-        className="absolute right-3 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center border border-white/30 bg-[#f7f3ea]/80 text-lg text-[#1a1510] backdrop-blur-sm transition-all hover:bg-[#f7f3ea] sm:right-5 sm:h-10 sm:w-10 md:right-8"
-        style={{ top: "calc((100% + var(--site-nav-clearance)) / 2)" }}
-      >
-        ›
-      </button>
+        <button
+          type="button"
+          onClick={() => go(index - 1)}
+          aria-label={t("previous")}
+          className="absolute left-3 top-1/2 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center border border-white/30 bg-[#f7f3ea]/80 text-lg text-[#1a1510] backdrop-blur-sm transition-all hover:bg-[#f7f3ea] sm:left-5 sm:h-10 sm:w-10 md:left-8"
+        >
+          ‹
+        </button>
+        <button
+          type="button"
+          onClick={() => go(index + 1)}
+          aria-label={t("next")}
+          className="absolute right-3 top-1/2 z-20 flex h-9 w-9 -translate-y-1/2 items-center justify-center border border-white/30 bg-[#f7f3ea]/80 text-lg text-[#1a1510] backdrop-blur-sm transition-all hover:bg-[#f7f3ea] sm:right-5 sm:h-10 sm:w-10 md:right-8"
+        >
+          ›
+        </button>
 
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-5 md:px-8">
-        <SectionReveal>
-          <div className="relative max-w-2xl">
-            <div
-              className="pointer-events-none absolute -inset-x-5 -inset-y-6 -z-10 bg-[radial-gradient(ellipse_at_left,rgba(247,243,234,0.94)_0%,rgba(247,243,234,0.78)_45%,transparent_78%)] sm:-inset-x-8 sm:-inset-y-8"
-              aria-hidden
-            />
-            <SacredEyebrow tone="dark" className="mb-3 sm:mb-4">
-              {eyebrow}
-            </SacredEyebrow>
-            <h1 className="font-display text-[clamp(2rem,6.5vw,3.6rem)] font-light leading-[1.08] tracking-[-0.02em] text-[#1a1510]">
-              {title}
-            </h1>
-            {subtitle && (
-              <p className="mt-4 max-w-xl text-[14px] font-light leading-relaxed text-[#2a241c]/85 sm:mt-5 sm:text-base md:text-lg">
-                {subtitle}
-              </p>
-            )}
-          </div>
-        </SectionReveal>
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-5 md:px-8">
+          <SectionReveal>
+            <div className="relative max-w-2xl">
+              <div
+                className="pointer-events-none absolute -inset-x-5 -inset-y-6 -z-10 bg-[radial-gradient(ellipse_at_left,rgba(247,243,234,0.94)_0%,rgba(247,243,234,0.78)_45%,transparent_78%)] sm:-inset-x-8 sm:-inset-y-8"
+                aria-hidden
+              />
+              <SacredEyebrow tone="dark" className="mb-3 sm:mb-4">
+                {eyebrow}
+              </SacredEyebrow>
+              <h1 className="font-display text-[clamp(2rem,6.5vw,3.6rem)] font-light leading-[1.08] tracking-[-0.02em] text-[#1a1510]">
+                {title}
+              </h1>
+              {subtitle && (
+                <p className="mt-4 max-w-xl text-[14px] font-light leading-relaxed text-[#2a241c]/85 sm:mt-5 sm:text-base md:text-lg">
+                  {subtitle}
+                </p>
+              )}
+            </div>
+          </SectionReveal>
+        </div>
       </div>
     </section>
   );

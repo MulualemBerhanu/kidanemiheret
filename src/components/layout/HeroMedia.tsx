@@ -12,10 +12,8 @@ interface HeroMediaProps {
 }
 
 /**
- * Consistent hero framing across devices.
- * Media always starts below the floating menu (no overlap).
- * Blurred ambient fill + object-contain keeps the full composition
- * identical on phone, tablet, and desktop.
+ * Fills its parent with blurred ambient + contained art.
+ * Parent must already start below the floating menu.
  */
 export function HeroMedia({
   src,
@@ -27,19 +25,23 @@ export function HeroMedia({
 }: HeroMediaProps) {
   return (
     <div
-      className={cn("absolute inset-x-0 bottom-0", className)}
-      style={{ top: "var(--site-nav-clearance)" }}
+      className={cn(
+        "absolute inset-0 isolate overflow-hidden bg-[#1a1510]",
+        className
+      )}
     >
-      <Image
-        src={src}
-        alt=""
-        fill
-        priority={priority}
-        quality={55}
-        className="scale-[1.2] object-cover opacity-90 blur-3xl"
-        sizes="100vw"
-        aria-hidden
-      />
+      {/* Nested clip so blur never paints into the menu band */}
+      <div className="absolute inset-0 overflow-hidden" aria-hidden>
+        <Image
+          src={src}
+          alt=""
+          fill
+          priority={priority}
+          quality={60}
+          className="object-cover opacity-80 blur-2xl"
+          sizes="100vw"
+        />
+      </div>
       <Image
         src={src}
         alt={alt}
