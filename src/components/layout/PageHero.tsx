@@ -44,7 +44,7 @@ export async function PageHero({
       )}
 
       <div
-        className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/15 to-transparent xl:top-[var(--site-nav-h)] md:from-black/35 md:via-transparent"
+        className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/15 to-transparent md:from-black/35 md:via-transparent"
         aria-hidden
       />
       <div
@@ -52,7 +52,7 @@ export async function PageHero({
         aria-hidden
       />
       <div
-        className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_40%,rgba(255,236,180,0.1),transparent_55%)] xl:top-[var(--site-nav-h)]"
+        className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_40%,rgba(255,236,180,0.1),transparent_55%)]"
         aria-hidden
       />
 

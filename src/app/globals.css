@@ -22,8 +22,6 @@
   --shadow-soft: 0 18px 48px rgba(16, 13, 11, 0.12);
   --shadow-deep: 0 24px 56px rgba(16, 13, 11, 0.35);
   --container-max: 80rem;
-  /* Desktop fixed top nav (xl) — heroes start below this */
-  --site-nav-h: 4.75rem;
 }
 
 @theme inline {

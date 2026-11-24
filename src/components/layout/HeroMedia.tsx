@@ -15,7 +15,7 @@ interface HeroMediaProps {
  * Consistent hero framing across devices.
  * Blurred ambient fill covers the hero; sharp art uses object-contain
  * so the full composition is identical on phone, tablet, and desktop
- * (never crops differently per viewport). Desktop starts under the nav.
+ * (never crops differently per viewport).
  */
 export function HeroMedia({
   src,
@@ -26,7 +26,7 @@ export function HeroMedia({
   className,
 }: HeroMediaProps) {
   return (
-    <div className={cn("absolute inset-0 xl:top-[var(--site-nav-h)]", className)}>
+    <div className={cn("absolute inset-0", className)}>
       <Image
         src={src}
         alt=""

@@ -34,7 +34,7 @@ export function HeroSectionClient({ upcomingEvent }: HeroSectionClientProps) {
           quality={92}
         />
         <div
-          className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent xl:top-[var(--site-nav-h)] md:from-black/35 md:via-transparent"
+          className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent md:from-black/35 md:via-transparent"
           aria-hidden
         />
         <div
@@ -42,7 +42,7 @@ export function HeroSectionClient({ upcomingEvent }: HeroSectionClientProps) {
           aria-hidden
         />
         <div
-          className="absolute inset-0 bg-[radial-gradient(ellipse_at_65%_40%,rgba(255,236,180,0.1),transparent_50%)] xl:top-[var(--site-nav-h)]"
+          className="absolute inset-0 bg-[radial-gradient(ellipse_at_65%_40%,rgba(255,236,180,0.1),transparent_50%)]"
           aria-hidden
         />
       </div>

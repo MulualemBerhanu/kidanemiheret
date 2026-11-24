@@ -86,7 +86,7 @@ export function GalleryPageHero({
       </div>
 
       <div
-        className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent xl:top-[var(--site-nav-h)] md:from-black/35 md:via-transparent"
+        className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent md:from-black/35 md:via-transparent"
         aria-hidden
       />
       <div

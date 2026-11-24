@@ -15,20 +15,11 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
   const tCommon = useTranslations("common");
   const pathname = usePathname();
   const reduced = useReducedMotion();
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(!transparent);
   const [hidden, setHidden] = useState(false);
   const [progress, setProgress] = useState(0);
   const [open, setOpen] = useState(false);
-  const [compactNav, setCompactNav] = useState(false);
   const lastY = useRef(0);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 1279px)");
-    const sync = () => setCompactNav(mq.matches);
-    sync();
-    mq.addEventListener("change", sync);
-    return () => mq.removeEventListener("change", sync);
-  }, []);
 
   useEffect(() => {
     let ticking = false;
@@ -40,10 +31,10 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
         const doc = document.documentElement;
         const max = Math.max(1, doc.scrollHeight - window.innerHeight);
         setProgress(Math.min(1, y / max));
-        setScrolled(y > 28);
+        setScrolled(y > 28 || !transparent);
 
-        /* Hide on scroll-down, reveal on scroll-up — mobile/tablet only */
-        if (compactNav && !open) {
+        /* Hide on scroll-down, reveal on scroll-up */
+        if (!open) {
           const delta = y - lastY.current;
           if (y < 48) setHidden(false);
           else if (delta > 8) setHidden(true);
@@ -58,7 +49,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
-  }, [open, compactNav]);
+  }, [open, transparent]);
 
   useEffect(() => {
     setOpen(false);
@@ -69,7 +60,6 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
     if (open) setHidden(false);
   }, [open]);
 
-  const solid = scrolled || !transparent;
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href);
 
@@ -77,33 +67,19 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
     <motion.header
       data-navbar
       initial={false}
-      animate={
-        reduced
-          ? undefined
-          : {
-              y: compactNav && hidden ? -120 : 0,
-            }
-      }
+      animate={reduced ? undefined : { y: hidden ? -140 : 0 }}
       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
       className={cn(
-        "fixed z-50 transition-[background,border-color,box-shadow,top] duration-300",
-        /* Mobile / tablet — floating frosted glass */
-        "left-3 right-3 rounded-2xl border xl:left-0 xl:right-0 xl:rounded-none xl:border-x-0 xl:border-t-0 xl:shadow-none",
-        compactNav
-          ? scrolled
-            ? "top-2 border-[#b68a3e]/35 bg-white/72 shadow-[0_16px_48px_rgba(16,13,11,0.18),inset_0_1px_0_rgba(255,255,255,0.85)]"
-            : "top-3 border-white/55 bg-white/40 shadow-[0_12px_40px_rgba(16,13,11,0.14),inset_0_1px_0_rgba(255,255,255,0.7)]"
-          : "top-0",
-        "backdrop-blur-2xl backdrop-saturate-150",
-        solid
-          ? "xl:border-b xl:border-[#b68a3e]/20 xl:bg-[#f7f3ea]/96 xl:shadow-[0_8px_32px_rgba(16,13,11,0.08)]"
-          : "xl:border-b xl:border-white/30 xl:bg-[#f7f3ea]/88"
+        "fixed left-3 right-3 z-50 rounded-2xl border backdrop-blur-2xl backdrop-saturate-150 transition-[background,border-color,box-shadow,top] duration-300 sm:left-4 sm:right-4 lg:left-6 lg:right-6 xl:left-8 xl:right-8",
+        scrolled
+          ? "top-2 border-[#b68a3e]/35 bg-white/72 shadow-[0_16px_48px_rgba(16,13,11,0.18),inset_0_1px_0_rgba(255,255,255,0.85)] sm:top-3"
+          : "top-3 border-white/55 bg-white/40 shadow-[0_12px_40px_rgba(16,13,11,0.14),inset_0_1px_0_rgba(255,255,255,0.7)] sm:top-4"
       )}
     >
-      {/* Gold sheen — intensifies when scrolled */}
+      {/* Gold sheen */}
       <div
         className={cn(
-          "pointer-events-none absolute inset-0 rounded-2xl transition-opacity duration-500 xl:hidden",
+          "pointer-events-none absolute inset-0 rounded-2xl transition-opacity duration-500",
           scrolled
             ? "bg-gradient-to-br from-[#e9d5a7]/40 via-transparent to-[#b68a3e]/10 opacity-100"
             : "bg-gradient-to-br from-[#e9d5a7]/25 via-transparent to-transparent opacity-80"
@@ -111,9 +87,9 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
         aria-hidden
       />
 
-      {/* Scroll progress — thin gold line under glass (mobile) */}
+      {/* Scroll progress */}
       <div
-        className="pointer-events-none absolute inset-x-4 bottom-0 h-px overflow-hidden rounded-full xl:hidden"
+        className="pointer-events-none absolute inset-x-4 bottom-0 h-px overflow-hidden rounded-full"
         aria-hidden
       >
         <div
@@ -124,41 +100,38 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
 
       <nav
         className={cn(
-          "relative mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-2 transition-[padding] duration-300 sm:gap-3 md:gap-4 md:px-8 xl:grid-cols-[minmax(0,1.1fr)_auto_minmax(0,1.1fr)]",
-          scrolled && compactNav
-            ? "px-3 py-2 sm:px-3.5 sm:py-2 md:py-3"
-            : "px-3.5 py-2.5 sm:px-4 sm:py-3 md:py-3.5"
+          "relative mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-2 transition-[padding] duration-300 sm:gap-3 md:gap-4 xl:grid-cols-[minmax(0,1.05fr)_auto_minmax(0,1.05fr)]",
+          scrolled
+            ? "px-3 py-2 sm:px-3.5 sm:py-2.5 md:px-5 md:py-3"
+            : "px-3.5 py-2.5 sm:px-4 sm:py-3 md:px-5 md:py-3.5"
         )}
         aria-label={t("mainAria")}
       >
         <Link
           href="/"
-          className="group flex min-w-0 items-center gap-2 sm:gap-2.5 xl:max-w-[280px] 2xl:max-w-[320px]"
+          className="group flex min-w-0 items-center gap-2 sm:gap-2.5 xl:max-w-[300px] 2xl:max-w-[340px]"
         >
           <span
             className={cn(
-              "relative flex shrink-0 items-center justify-center rounded-full border border-white/60 bg-white/50 shadow-[inset_0_1px_0_rgba(255,255,255,0.8)] backdrop-blur-md transition-all duration-300 xl:h-auto xl:w-auto xl:border-0 xl:bg-transparent xl:shadow-none",
-              scrolled && compactNav ? "h-8 w-8 border-[#b68a3e]/30 bg-[#e9d5a7]/25" : "h-9 w-9"
+              "relative flex shrink-0 items-center justify-center rounded-full border shadow-[inset_0_1px_0_rgba(255,255,255,0.8)] backdrop-blur-md transition-all duration-300",
+              scrolled
+                ? "h-8 w-8 border-[#b68a3e]/30 bg-[#e9d5a7]/25 sm:h-9 sm:w-9"
+                : "h-9 w-9 border-white/60 bg-white/50 sm:h-10 sm:w-10"
             )}
           >
             <MeskelCross
-              size={scrolled && compactNav ? 24 : 28}
+              size={scrolled ? 24 : 28}
               priority
-              className="opacity-95 xl:hidden"
-            />
-            <MeskelCross
-              size={40}
-              priority
-              className="hidden opacity-90 transition-opacity group-hover:opacity-100 xl:inline-flex"
+              className="opacity-95"
             />
           </span>
           <div className="min-w-0 flex-1">
             <span
               className={cn(
-                "font-display block font-medium leading-[1.15] tracking-[0.01em] text-[#1a1510] transition-all duration-300 group-hover:text-[#8a6a3a] xl:truncate xl:text-[1.08rem]",
-                scrolled && compactNav
-                  ? "text-[0.78rem] sm:text-[0.9rem] md:text-[1rem]"
-                  : "text-[0.82rem] sm:text-[0.95rem] md:text-[1.05rem]"
+                "font-display block font-medium leading-[1.15] tracking-[0.01em] text-[#1a1510] transition-all duration-300 group-hover:text-[#8a6a3a]",
+                scrolled
+                  ? "text-[0.78rem] sm:text-[0.9rem] md:text-[1rem] xl:text-[1.05rem]"
+                  : "text-[0.82rem] sm:text-[0.95rem] md:text-[1.05rem] xl:text-[1.1rem]"
               )}
             >
               {tSite("shortName")}
@@ -169,41 +142,42 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
           </div>
         </Link>
 
-        <ul className="hidden items-center justify-center gap-4 xl:flex 2xl:gap-6">
+        <ul className="hidden items-center justify-center gap-3 xl:flex 2xl:gap-5">
           {navRoutes.map((item) => (
             <li key={item.href} className="shrink-0">
               <Link
                 href={item.href}
                 className={cn(
-                  "group relative inline-block whitespace-nowrap py-1 text-[11px] font-medium uppercase tracking-[0.18em] transition-colors duration-300 2xl:tracking-[0.22em]",
+                  "group relative inline-block whitespace-nowrap rounded-full px-2.5 py-1.5 text-[11px] font-medium uppercase tracking-[0.16em] transition-colors duration-300 2xl:tracking-[0.2em]",
                   isActive(item.href)
-                    ? "text-[#1a1510]"
-                    : "text-[#1a1510]/65 hover:text-[#1a1510]"
+                    ? "bg-[#e9d5a7]/35 text-[#1a1510]"
+                    : "text-[#1a1510]/65 hover:bg-white/40 hover:text-[#1a1510]"
                 )}
               >
                 {t(item.key)}
-                <span
-                  className={cn(
-                    "absolute -bottom-0.5 left-0 h-px w-full origin-left bg-[#b68a3e] transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]",
-                    isActive(item.href) ? "scale-x-100" : "scale-x-0 group-hover:scale-x-100"
-                  )}
-                  aria-hidden
-                />
               </Link>
             </li>
           ))}
         </ul>
 
         <div className="flex items-center justify-end gap-2 sm:gap-3">
-          <div className="hidden xl:flex xl:items-center xl:gap-5">
-            <LanguageSwitcher className="[&_button]:text-[11px] [&_button]:tracking-[0.08em] [&_button]:text-[#2a241c]/55 [&_button[aria-current=true]]:text-[#8a6a2e] [&_button:hover]:text-[#1a1510]" />
-            <Link
-              href="/give"
-              className="inline-flex items-center justify-center bg-gradient-to-r from-[#b68a3e] to-[#c9a227] px-5 py-2 text-[10px] font-medium uppercase tracking-[0.24em] text-[#1a1510] transition-all duration-300 hover:brightness-110 hover:shadow-[0_6px_20px_rgba(182,138,62,0.28)]"
-            >
-              {tCommon("give")}
-            </Link>
+          <div
+            className={cn(
+              "hidden items-center rounded-full border px-2.5 py-1.5 shadow-[inset_0_1px_0_rgba(255,255,255,0.75)] backdrop-blur-md transition-all duration-300 xl:flex",
+              scrolled
+                ? "border-[#b68a3e]/30 bg-white/70"
+                : "border-white/60 bg-white/45"
+            )}
+          >
+            <LanguageSwitcher className="[&_button]:text-[11px] [&_button]:tracking-[0.08em] [&_button]:text-[#2a241c]/65 [&_button[aria-current=true]]:text-[#8a6a2e] [&_button:hover]:text-[#1a1510]" />
           </div>
+
+          <Link
+            href="/give"
+            className="hidden items-center justify-center rounded-full bg-gradient-to-r from-[#b68a3e] to-[#c9a227] px-4 py-2 text-[10px] font-medium uppercase tracking-[0.22em] text-[#1a1510] shadow-[0_4px_14px_rgba(182,138,62,0.28)] transition-all duration-300 hover:brightness-110 xl:inline-flex"
+          >
+            {tCommon("give")}
+          </Link>
 
           <div className="flex items-center gap-2 xl:hidden">
             <div
