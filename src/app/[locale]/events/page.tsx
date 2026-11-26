@@ -27,6 +27,7 @@ export default async function EventsPage({ params }: Props) {
         title={t("pageTitle")}
         subtitle={t("pageSubtitle")}
         backgroundSrc={pageHeroImages.events}
+        imageFit="contain"
       />
       <section className="bg-charcoal py-16 md:py-24">
         <div className="mx-auto max-w-7xl px-5 md:px-8 grid gap-8 md:grid-cols-2">

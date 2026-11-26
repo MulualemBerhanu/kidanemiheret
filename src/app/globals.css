@@ -22,25 +22,31 @@
   --shadow-soft: 0 18px 48px rgba(16, 13, 11, 0.12);
   --shadow-deep: 0 24px 56px rgba(16, 13, 11, 0.35);
   --container-max: 80rem;
-  /* Floating glass menu: top inset + bar + gap — heroes start below */
-  --site-nav-clearance: 7.5rem;
+  /*
+   * Floating menu clearance ≈ top inset + nav height + small gap
+   * (matches measured nav ~68px + top ~16px)
+   */
+  --site-nav-clearance: 5.5rem;
+  /* Warm frame tone matching sacred-image gold borders */
+  --hero-frame: #4a3420;
 }
 
 html {
-  --site-nav-clearance: 7.5rem;
+  --site-nav-clearance: 5.5rem;
+  --hero-frame: #4a3420;
 }
 
 @media (min-width: 640px) {
   :root,
   html {
-    --site-nav-clearance: 8rem;
+    --site-nav-clearance: 5.75rem;
   }
 }
 
 @media (min-width: 1280px) {
   :root,
   html {
-    --site-nav-clearance: 8.5rem;
+    --site-nav-clearance: 6rem;
   }
 }
 

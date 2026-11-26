@@ -73,11 +73,14 @@ export function GalleryPageHero({
       {/* Real layout spacer — image cannot sit under the menu */}
       <div
         className="w-full shrink-0 bg-[#f7f3ea]"
-        style={{ height: "var(--site-nav-clearance, 7rem)" }}
+        style={{ height: "var(--site-nav-clearance, 5.5rem)" }}
         aria-hidden
       />
 
-      <div className="relative flex min-h-[40svh] items-end overflow-hidden bg-[#1a1510] pb-12 sm:min-h-[46svh] sm:pb-16 md:min-h-[54svh] md:pb-20 lg:min-h-[60svh]">
+      <div
+        className="relative flex w-full aspect-[4/5] items-end overflow-hidden sm:aspect-[5/4] md:aspect-[3/2] lg:aspect-[2/1]"
+        style={{ backgroundColor: "var(--hero-frame, #4a3420)" }}
+      >
         <div className="absolute inset-0" aria-hidden>
           <AnimatePresence mode="wait">
             <motion.div
@@ -88,17 +91,22 @@ export function GalleryPageHero({
               transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
               className="absolute inset-0"
             >
-              <HeroMedia src={active.src} priority={index === 0} quality={90} />
+              <HeroMedia
+                src={active.src}
+                priority={index === 0}
+                quality={90}
+                fit="cover"
+              />
             </motion.div>
           </AnimatePresence>
         </div>
 
         <div
-          className="absolute inset-0 bg-gradient-to-r from-black/45 via-black/15 to-transparent md:from-black/35 md:via-transparent"
+          className="absolute inset-0 bg-gradient-to-r from-black/35 via-transparent to-transparent md:from-black/25"
           aria-hidden
         />
         <div
-          className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#100d0b] via-[#100d0b]/50 to-transparent sm:h-44"
+          className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#100d0b]/65 via-[#100d0b]/20 to-transparent sm:h-36"
           aria-hidden
         />
 
@@ -119,7 +127,7 @@ export function GalleryPageHero({
           ›
         </button>
 
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-5 md:px-8">
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-8 sm:px-5 sm:pb-10 md:px-8 md:pb-12">
           <SectionReveal>
             <div className="relative max-w-2xl">
               <div

@@ -2,7 +2,6 @@ import { getTranslations } from "next-intl/server";
 import { HeroMedia } from "@/components/layout/HeroMedia";
 import { SectionReveal } from "@/components/effects/SectionReveal";
 import { SacredEyebrow } from "@/components/ui/SacredEyebrow";
-import { cn } from "@/lib/utils";
 
 interface PageHeroProps {
   title: string;
@@ -12,7 +11,7 @@ interface PageHeroProps {
   backgroundPosition?: "top" | "center" | "bottom";
   /** Kept for API compatibility */
   imageFit?: "cover" | "contain";
-  /** Taller cinematic About-style hero */
+  /** Higher quality for featured pages */
   variant?: "default" | "cinematic";
 }
 
@@ -30,41 +29,35 @@ export async function PageHero({
       {/* Reserved space so the floating menu never covers the image */}
       <div
         className="w-full shrink-0 bg-[#f7f3ea]"
-        style={{ height: "var(--site-nav-clearance, 7rem)" }}
+        style={{ height: "var(--site-nav-clearance, 5.5rem)" }}
         aria-hidden
       />
 
+      {/* Taller on mobile so the image owns the first screen; widens toward 2:1 on desktop */}
       <div
-        className={cn(
-          "relative flex items-end overflow-hidden bg-[#1a1510]",
-          cinematic
-            ? "min-h-[44svh] pb-12 sm:min-h-[50svh] sm:pb-16 md:min-h-[62svh] md:pb-20 lg:min-h-[70svh]"
-            : "min-h-[40svh] pb-12 sm:min-h-[46svh] sm:pb-16 md:min-h-[54svh] md:pb-20 lg:min-h-[60svh]"
-        )}
+        className="relative flex w-full aspect-[4/5] items-end overflow-hidden sm:aspect-[5/4] md:aspect-[3/2] lg:aspect-[2/1]"
+        style={{ backgroundColor: "var(--hero-frame, #4a3420)" }}
       >
         {backgroundSrc && (
           <HeroMedia
             src={backgroundSrc}
             priority
             quality={cinematic ? 90 : 85}
-            opacity={cinematic ? 0.95 : 0.92}
+            opacity={1}
+            fit="cover"
           />
         )}
 
         <div
-          className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/15 to-transparent md:from-black/35 md:via-transparent"
+          className="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-transparent md:from-black/25"
           aria-hidden
         />
         <div
-          className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#100d0b] via-[#100d0b]/50 to-transparent sm:h-44"
-          aria-hidden
-        />
-        <div
-          className="absolute inset-0 bg-[radial-gradient(ellipse_at_70%_40%,rgba(255,236,180,0.1),transparent_55%)]"
+          className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-[#100d0b]/70 via-[#100d0b]/25 to-transparent sm:h-40 md:h-36"
           aria-hidden
         />
 
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-5 md:px-8">
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pb-10 sm:px-6 sm:pb-12 md:px-8 md:pb-12">
           <SectionReveal>
             <div className="relative max-w-2xl">
               <div
@@ -75,7 +68,7 @@ export async function PageHero({
               <SacredEyebrow tone="dark" className="mb-3 sm:mb-4">
                 {t("shortName")}
               </SacredEyebrow>
-              <h1 className="font-display max-w-[18ch] text-[clamp(2rem,6.5vw,3.6rem)] font-light leading-[1.08] tracking-[-0.02em] text-[#1a1510]">
+              <h1 className="font-display max-w-[18ch] text-[clamp(2.15rem,7vw,3.6rem)] font-light leading-[1.08] tracking-[-0.02em] text-[#1a1510]">
                 {title}
               </h1>
               {subtitle && (

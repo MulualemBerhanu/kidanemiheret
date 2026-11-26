@@ -26,6 +26,7 @@ export default async function GivePage({ params }: Props) {
         title={t("pageTitle")}
         subtitle={t("pageSubtitle")}
         backgroundSrc={pageHeroImages.give}
+        imageFit="contain"
       />
       <section className="relative bg-charcoal py-16 md:py-24 overflow-hidden">
         <Image

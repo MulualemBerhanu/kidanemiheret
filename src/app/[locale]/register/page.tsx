@@ -25,7 +25,7 @@ export default async function RegisterPage({ params }: Props) {
         title={t("pageTitle")}
         subtitle={t("pageSubtitle")}
         backgroundSrc={pageHeroImages.register}
-        backgroundPosition="center"
+        imageFit="contain"
       />
       <SectionTransition from="charcoal" to="ivory" />
       <RegisterSection />

@@ -2,8 +2,8 @@
  * Tiered image manifest — replace placeholders in /public/images/editorial/
  * See public/images/ASSETS.md for the full upload checklist.
  *
- * Page heroes use /images/heroes/* staged 2:1 frames. HeroMedia shows them
- * with object-contain + edge blur so framing stays identical on every device.
+ * Page heroes use /images/heroes/* staged 2:1 frames so every page fills
+ * the same aspect-[2/1] plane on mobile, tablet, and desktop.
  */
 
 export const editorialImages = {
@@ -21,11 +21,11 @@ export const editorialImages = {
 export const pageHeroImages = {
   about: "/images/heroes/about-mary-saint-clouds.jpg",
   ministries: "/images/heroes/ministries-altar.jpg",
-  events: "/images/editorial/page-events.jpg",
+  events: "/images/heroes/events-ceremony.jpg",
   gallery: "/images/heroes/gallery-mariyam.jpg",
-  give: "/images/editorial/page-give.jpg",
+  give: "/images/heroes/give-mariyam-sidet.jpg",
   contact: "/images/heroes/contact-holy-family.jpg",
-  register: "/images/gallery/welcome.JPG",
+  register: "/images/heroes/register-welcome.jpg",
 } as const;
 
 export const ministryImages: Record<string, string> = {
