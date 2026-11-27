@@ -9,6 +9,9 @@ import { cn } from "@/lib/utils";
 import { MeskelCross } from "@/components/effects/MeskelCross";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 
+const MENU_LINK_CLASS =
+  "font-display text-[17px] font-bold normal-case tracking-[-0.01em] 2xl:text-[18px]";
+
 export function Navbar({ transparent = false }: { transparent?: boolean }) {
   const t = useTranslations("nav");
   const tSite = useTranslations("site");
@@ -20,6 +23,36 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
   const [progress, setProgress] = useState(0);
   const [open, setOpen] = useState(false);
   const lastY = useRef(0);
+  const headerRef = useRef<HTMLElement>(null);
+
+  /* Keep hero clearance equal to the bar height — no gap under the nav */
+  useEffect(() => {
+    const header = headerRef.current;
+    if (!header) return;
+    const navEl = header.querySelector("nav");
+    if (!navEl) return;
+
+    const sync = () => {
+      const borderY =
+        parseFloat(getComputedStyle(header).borderTopWidth) +
+        parseFloat(getComputedStyle(header).borderBottomWidth);
+      const h = Math.ceil(navEl.getBoundingClientRect().height + borderY);
+      document.documentElement.style.setProperty(
+        "--site-nav-clearance",
+        `${h}px`
+      );
+      document.documentElement.style.scrollPaddingTop = `${h}px`;
+    };
+
+    sync();
+    const ro = new ResizeObserver(sync);
+    ro.observe(navEl);
+    return () => {
+      ro.disconnect();
+      document.documentElement.style.removeProperty("--site-nav-clearance");
+      document.documentElement.style.scrollPaddingTop = "";
+    };
+  }, [scrolled, open]);
 
   useEffect(() => {
     let ticking = false;
@@ -65,21 +98,22 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
 
   return (
     <motion.header
+      ref={headerRef}
       data-navbar
       initial={false}
       animate={reduced ? undefined : { y: hidden ? -140 : 0 }}
       transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
       className={cn(
-        "fixed left-3 right-3 z-50 rounded-2xl border backdrop-blur-2xl backdrop-saturate-150 transition-[background,border-color,box-shadow,top] duration-300 sm:left-4 sm:right-4 lg:left-6 lg:right-6 xl:left-8 xl:right-8",
+        "fixed inset-x-0 top-0 z-50 border-b backdrop-blur-2xl backdrop-saturate-150 transition-[background,border-color,box-shadow] duration-300",
         scrolled
-          ? "top-2 border-[#b68a3e]/35 bg-white/72 shadow-[0_16px_48px_rgba(16,13,11,0.18),inset_0_1px_0_rgba(255,255,255,0.85)] sm:top-3"
-          : "top-3 border-white/55 bg-white/40 shadow-[0_12px_40px_rgba(16,13,11,0.14),inset_0_1px_0_rgba(255,255,255,0.7)] sm:top-4"
+          ? "border-[#b68a3e]/35 bg-white/80 shadow-[0_16px_48px_rgba(16,13,11,0.18),inset_0_1px_0_rgba(255,255,255,0.85)]"
+          : "border-[#b68a3e]/20 bg-[#f7f3ea]/95 shadow-[0_12px_40px_rgba(16,13,11,0.12),inset_0_1px_0_rgba(255,255,255,0.85)]"
       )}
     >
       {/* Gold sheen */}
       <div
         className={cn(
-          "pointer-events-none absolute inset-0 rounded-2xl transition-opacity duration-500",
+          "pointer-events-none absolute inset-0 transition-opacity duration-500",
           scrolled
             ? "bg-gradient-to-br from-[#e9d5a7]/40 via-transparent to-[#b68a3e]/10 opacity-100"
             : "bg-gradient-to-br from-[#e9d5a7]/25 via-transparent to-transparent opacity-80"
@@ -89,7 +123,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
 
       {/* Scroll progress */}
       <div
-        className="pointer-events-none absolute inset-x-4 bottom-0 h-px overflow-hidden rounded-full"
+        className="pointer-events-none absolute inset-x-0 bottom-0 h-px overflow-hidden"
         aria-hidden
       >
         <div
@@ -109,35 +143,45 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
       >
         <Link
           href="/"
-          className="group flex min-w-0 items-center gap-2 sm:gap-2.5 xl:max-w-[300px] 2xl:max-w-[340px]"
+          className="group flex shrink-0 items-center gap-2 sm:gap-2.5"
         >
           <span
             className={cn(
               "relative flex shrink-0 items-center justify-center rounded-full border shadow-[inset_0_1px_0_rgba(255,255,255,0.8)] backdrop-blur-md transition-all duration-300",
               scrolled
-                ? "h-8 w-8 border-[#b68a3e]/30 bg-[#e9d5a7]/25 sm:h-9 sm:w-9"
-                : "h-9 w-9 border-white/60 bg-white/50 sm:h-10 sm:w-10"
+                ? "h-9 w-9 border-[#b68a3e]/30 bg-[#e9d5a7]/25 sm:h-10 sm:w-10"
+                : "h-10 w-10 border-white/60 bg-white/50 sm:h-11 sm:w-11"
             )}
           >
             <MeskelCross
-              size={scrolled ? 24 : 28}
+              size={scrolled ? 26 : 30}
               priority
               className="opacity-95"
             />
           </span>
-          <div className="min-w-0 flex-1">
+          <div className="leading-none">
             <span
               className={cn(
-                "font-display block font-medium leading-[1.15] tracking-[0.01em] text-[#1a1510] transition-all duration-300 group-hover:text-[#8a6a3a]",
+                "font-display block font-medium tracking-[0.01em] text-[#1a1510] transition-colors duration-300 group-hover:text-[#8a6a3a]",
                 scrolled
-                  ? "text-[0.78rem] sm:text-[0.9rem] md:text-[1rem] xl:text-[1.05rem]"
-                  : "text-[0.82rem] sm:text-[0.95rem] md:text-[1.05rem] xl:text-[1.1rem]"
+                  ? "text-[0.8rem] leading-[1.12] sm:text-[0.92rem] md:text-[1rem]"
+                  : "text-[0.84rem] leading-[1.12] sm:text-[0.96rem] md:text-[1.05rem]"
               )}
             >
-              {tSite("shortName")}
+              {tSite("nameLine1")}
             </span>
-            <span className="mt-0.5 hidden text-[8px] font-semibold uppercase tracking-[0.22em] text-[#5c4524] lg:block xl:truncate">
-              {tSite("denomination")}
+            <span
+              className={cn(
+                "font-display block font-medium tracking-[0.01em] text-[#1a1510] transition-colors duration-300 group-hover:text-[#8a6a3a]",
+                scrolled
+                  ? "text-[0.8rem] leading-[1.12] sm:text-[0.92rem] md:text-[1rem]"
+                  : "text-[0.84rem] leading-[1.12] sm:text-[0.96rem] md:text-[1.05rem]"
+              )}
+            >
+              {tSite("nameLine2")}
+            </span>
+            <span className="mt-1 block whitespace-nowrap text-[7.5px] font-semibold uppercase tracking-[0.16em] text-[#5c4524] sm:text-[8px] sm:tracking-[0.18em]">
+              {tSite("nameLine3")}
             </span>
           </div>
         </Link>
@@ -148,7 +192,8 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
               <Link
                 href={item.href}
                 className={cn(
-                  "group relative inline-block whitespace-nowrap rounded-full px-2.5 py-1.5 text-[11px] font-medium uppercase tracking-[0.16em] transition-colors duration-300 2xl:tracking-[0.2em]",
+                  "group relative inline-block whitespace-nowrap rounded-full px-2.5 py-1.5 transition-colors duration-300 2xl:px-3",
+                  MENU_LINK_CLASS,
                   isActive(item.href)
                     ? "bg-[#e9d5a7]/35 text-[#1a1510]"
                     : "text-[#1a1510]/65 hover:bg-white/40 hover:text-[#1a1510]"
@@ -172,13 +217,6 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
             <LanguageSwitcher className="[&_button]:text-[11px] [&_button]:tracking-[0.08em] [&_button]:text-[#2a241c]/65 [&_button[aria-current=true]]:text-[#8a6a2e] [&_button:hover]:text-[#1a1510]" />
           </div>
 
-          <Link
-            href="/give"
-            className="hidden items-center justify-center rounded-full bg-gradient-to-r from-[#b68a3e] to-[#c9a227] px-4 py-2 text-[10px] font-medium uppercase tracking-[0.22em] text-[#1a1510] shadow-[0_4px_14px_rgba(182,138,62,0.28)] transition-all duration-300 hover:brightness-110 xl:inline-flex"
-          >
-            {tCommon("give")}
-          </Link>
-
           <div className="flex items-center gap-2 xl:hidden">
             <div
               className={cn(
@@ -190,12 +228,6 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
             >
               <LanguageSwitcher className="[&_button]:text-[10px] [&_button]:text-[#2a241c]/65 [&_button[aria-current=true]]:text-[#8a6a2e] sm:[&_button]:text-[11px]" />
             </div>
-            <Link
-              href="/give"
-              className="hidden items-center justify-center rounded-full bg-gradient-to-r from-[#b68a3e] to-[#c9a227] px-3.5 py-1.5 text-[9px] font-medium uppercase tracking-[0.2em] text-[#1a1510] shadow-[0_4px_14px_rgba(182,138,62,0.3)] sm:inline-flex"
-            >
-              {tCommon("give")}
-            </Link>
             <button
               type="button"
               className={cn(
@@ -244,7 +276,7 @@ export function Navbar({ transparent = false }: { transparent?: boolean }) {
                     <Link
                       href={item.href}
                       className={cn(
-                        "block border-b border-[#1a1510]/06 px-4 py-3.5 text-[12px] font-medium uppercase tracking-[0.2em] transition-colors last:border-0",
+                        "font-display block border-b border-[#1a1510]/06 px-4 py-3.5 text-[17px] font-bold normal-case tracking-[-0.01em] transition-colors last:border-0",
                         isActive(item.href)
                           ? "bg-[#e9d5a7]/25 text-[#8a6a2e]"
                           : "text-[#2a241c]/85 active:bg-white/60"

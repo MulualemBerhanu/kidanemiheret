@@ -23,31 +23,17 @@
   --shadow-deep: 0 24px 56px rgba(16, 13, 11, 0.35);
   --container-max: 80rem;
   /*
-   * Floating menu clearance ≈ top inset + nav height + small gap
-   * (matches measured nav ~68px + top ~16px)
+   * Fallback only — Navbar sets this to the live bar height so the
+   * hero image starts flush under the full-width menubar.
    */
-  --site-nav-clearance: 5.5rem;
+  --site-nav-clearance: 4.5rem;
   /* Warm frame tone matching sacred-image gold borders */
   --hero-frame: #4a3420;
 }
 
 html {
-  --site-nav-clearance: 5.5rem;
+  --site-nav-clearance: 4.5rem;
   --hero-frame: #4a3420;
-}
-
-@media (min-width: 640px) {
-  :root,
-  html {
-    --site-nav-clearance: 5.75rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  :root,
-  html {
-    --site-nav-clearance: 6rem;
-  }
 }
 
 @theme inline {
@@ -68,7 +54,7 @@ html {
 }
 
 html {
-  scroll-padding-top: 5.5rem;
+  scroll-padding-top: var(--site-nav-clearance, 4.5rem);
 }
 
 /* Lenis handles smooth wheel on desktop — avoid double-smoothing */
